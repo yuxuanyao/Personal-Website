@@ -71,21 +71,22 @@ header h1 {
 .tab .content {
   background: #fff;
   width: 360px;
-  height: 200px;
+  height: 100px;
   margin-left: 80px;
-  padding: 50px 0 0 15px;
+  padding: 20px 0 0 15px;
   position: relative;
 }
 
 .tab .content h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .tab .content p {
   font-size: 0.85rem;
   line-height: 1.4rem;
-  padding-right: 30px;
+  padding-right: 20px;
+
 }
 
 .social a:after,
@@ -150,24 +151,30 @@ header h1 {
 }
 
 @media (max-width: 950px) {
+
   .container {
-    width: 70%;
+    width: 100%%;
   }
 
   .tab {
     display: block;
     width: 100%;
-    border-bottom: 3px #333 solid;
   }
 
   .accordion {
-    display: block;
-    min-width: 450px;
+    display: flex;
+    max-width: 400px;
     height: auto;
+    transition: none !important;
   }
 
+  .accordion:hover {
+    max-width: 400px;
+  }
+
+
   .tab .content {
-    width: 85%;
+    display: none;
   }
 
   .tab:hover {
@@ -177,11 +184,38 @@ header h1 {
 
 @media (max-width: 680px) {
   .container {
-    width: 95%;
+    width: 100%%;
   }
 
+  .tab {
+    display: block;
+    width: 100%;
+    max-width: 60px;
+  }
+  .tab:hover {
+    width: 100%;
+  }
   .accordion {
     width: 100%;
-    min-width: 350px;
+    max-width: 300px;
+    height: auto;
+    transition: none !important;
   }
+  .accordion:hover {
+    max-width: 300px;
+  }
+
+  .social a:after,
+  .social a:before {
+  padding-left: 15px;
 }
+
+.social a:after {
+  padding-left: 20px;
+}
+
+}
+
+
+
+
