@@ -11,8 +11,8 @@ body {
 
 @font-face {
   font-family: 'Genericons';
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype");
+  src: url('fonts/genericons-regular-webfont.woff')format('woff'),
+  url('fonts/genericons-regular-webfont.eot')format('truetype')
 }
 
 .container {
@@ -91,7 +91,7 @@ header h1 {
   padding-top: 90px;
   padding-left: 25px;
   display: block;
-  font: normal 30px Genericons;
+  font: normal 30px 'Genericons' !important;;
   color: #fff;
 }
 
