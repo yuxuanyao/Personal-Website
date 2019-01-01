@@ -3,20 +3,38 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-
-
 // box for parallax 
 function Box(props) {
+    // renders the list based on list elements
+    var ret = [];
+    for (var i = 0; i < props.description.length; ++i) {
+        ret.push(<li>{props.description[i]}</li>);
+    }
+
+
     return (
         <div className="parallax-container">
             <div className="text">
-                <h1>{props.title}</h1>
-                <p>{props.description}</p>
+                <div className="bar">
+                    <div className="red">
+                    </div>
+                    <div className="yellow">
+                    </div>
+                    <div className="green">
+                    </div>
+                </div>
+                <div className="screen">
+                    <div className="font">
+                        <h1>{props.title}</h1>
+                        <ul>{ret}</ul>
+                    </div>
+                </div>
             </div>
             <div className={props.cName}>
             </div>
 
         </div>
+
     )
 
 }
@@ -44,15 +62,36 @@ class Timeline extends React.Component {
             "Crocker Foundation Bursary",
             "HackPrinceton"];
 
-        const treeHacks = `I'm very honored to have been accepted into TreeHacks at Stanford University! I'm looking forward to learning and imbibing lots of tech related knowledge and visiting Silicon Valley! `;
-        const crocker = `"The income from a capital fund established from the estate of the late Beatrice Crocker Glazier in memory of her brother, James William Crocker, provides bursaries for students in the Faculty of Medicine and the Faculty of Applied Science and Engineering who are in need and are worthy of financial assistance."`;
-        const hackPrinceton = `I attended HackPrinceton in November, 2018 with a friend and created a program to detect vacant parking spots within a parking lot using camera footage and python's openCV`
+
+
+        const tH1 = `I'm very honored to have been accepted into TreeHacks at Stanford University!`;
+        const tH2 = `I'm looking forward to learn and imbibe lots of tech related knowledge!`;
+        const tH3 = `(and visiting Silicon Valley!) `;
+
+
+        const cro1 = `"The income from a capital fund established from the estate of the late Beatrice Crocker Glazier in memory of her brother, James William Crocker"`;
+        const cro2 = `"Provides bursaries for students in the Faculty of Medicine and the Faculty of Applied Science and Engineering who are in need and are worthy of financial assistance."`;
+
+
+        const hP1 = `November 11th, 2018 `;
+        const hP2 = `Ceated a program named Avacancy`;
+        const hP3 = `The program detects vacant parking spots within a parking lot using camera footage and python's openCV`;
+
+        // arrays of strings
+        const treeHacks = [tH1, tH2, tH3];
+        const crocker = [cro1, cro2];
+        const hackPrinceton = [hP1, hP2, hP3];
+
+        // 2D array of strings
         var description = [treeHacks, crocker, hackPrinceton];
 
+        // array of Box components
         var contents = [];
 
         for (var i = 0; i < titles.length; ++i) {
-            contents.push(<Box cName={'box box' + i} title={titles[i]} description={description[i]} />);
+            contents.push(<Box cName={'box box' + i}
+                title={titles[i]}
+                description={description[i]} />);
         }
         return (
             <div>
@@ -61,10 +100,6 @@ class Timeline extends React.Component {
         );
     }
 }
-
-
-
-
 
 // Top level component
 class TopLevel extends React.Component {
