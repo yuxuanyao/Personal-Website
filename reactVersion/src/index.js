@@ -2,33 +2,68 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+
+
+
+// box for parallax 
 function Box(props) {
     return (
-        <div className={props.cName}>
-            <h1>Parallax</h1>
+        <div className="parallax-container">
+            <div className="text">
+                <h1>{props.title}</h1>
+            </div>
+            <div className={props.cName}>
+            </div>
+
         </div>
     )
 
 }
 
-class TopLevel extends React.Component {
 
-    renderBox(name) {
+class Timeline extends React.Component {
+
+    // render parallax box components
+    renderBox(name, title) {
         return (
             <Box
                 cName={name}
+                title={title}
+            //content={content}
             />
         );
     }
 
+
+
     render() {
-        let i = 0;
+
+        var titles = ["TreeHacks",
+            "Crocker Foundation Bursary",
+            "HackPrinceton"]
+        var contents = [];
+
+        for (var i = 0; i < titles.length; ++i) {
+            contents.push(<Box cName={'box box' + i} title={titles[i]} />);
+        }
         return (
             <div>
-                {this.renderBox('box box' + (++i))}
-                {this.renderBox('box box' + (++i))}
-                {this.renderBox('box box' + (++i))}
+                {contents}
             </div>
+        );
+    }
+}
+
+
+
+
+
+// Top level component 
+class TopLevel extends React.Component {
+
+    render() {
+        return (
+            <Timeline />
         );
     }
 }
