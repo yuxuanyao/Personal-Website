@@ -10,6 +10,8 @@ import 'aos/dist/aos.css';
 
 
 
+
+
 // box for parallax 
 function Box(props) {
 
@@ -118,6 +120,7 @@ class TopLevel extends React.Component {
         AOS.init({
             duration: 600,
         })
+
     }
     render() {
         return (
