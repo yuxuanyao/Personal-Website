@@ -3,9 +3,17 @@ import ReactDOM from 'react-dom';
 import './css/parallax.css';
 import './css/terminal.css'
 
+// aos library for on scroll animation
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 
 // box for parallax 
 function Box(props) {
+
+
     // renders the list based on list elements
     var ret = [];
     for (var i = 0; i < props.description.length; ++i) {
@@ -15,19 +23,21 @@ function Box(props) {
 
     return (
         <div className="parallax-container">
-            <div className="text">
-                <div className="bar">
-                    <div className="red">
+            <div className="text" >
+                <div className="scroll-container" data-aos='zoom-in-right'>
+                    <div className="bar">
+                        <div className="red">
+                        </div>
+                        <div className="yellow">
+                        </div>
+                        <div className="green">
+                        </div>
                     </div>
-                    <div className="yellow">
-                    </div>
-                    <div className="green">
-                    </div>
-                </div>
-                <div className="screen">
-                    <div className="font">
-                        <h1>{props.title}</h1>
-                        <ul>{ret}</ul>
+                    <div className="screen">
+                        <div className="font">
+                            <h1>{props.title}</h1>
+                            <ul>{ret}</ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,7 +114,11 @@ class Timeline extends React.Component {
 
 // Top level component
 class TopLevel extends React.Component {
-
+    componentDidMount() {
+        AOS.init({
+            duration: 600,
+        })
+    }
     render() {
         return (
             <Timeline />
