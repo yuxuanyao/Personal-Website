@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/parallax.css';
+import './css/terminal.css'
 
 
 // box for parallax 

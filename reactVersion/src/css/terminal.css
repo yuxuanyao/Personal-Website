@@ -1,0 +1,64 @@
+
+.bar {
+    text-align: center;
+    width: 750px;
+    height: 25px;
+    background-color: #DAD9D9;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.red {
+    background-color: #E98074;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -47%;
+    bottom: -20%;
+    position:relative;
+}
+.yellow {
+    background-color: #d8c3a5;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -44%;
+    bottom: 40%;
+    position:relative;
+    display: block;
+}
+.green {
+    background-color: #8e8d8a;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -41%;
+    bottom: 99%;
+    position:relative;
+    display: block;
+}
+.screen {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.6); 
+    width: 750px;
+    height: 450px;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    margin: 0 auto;
+    padding: 1px;
+}
+.font {
+    color: #fff;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    padding: 20px 40px;
+    list-style-image: url('../images/other/inputIcon.png')
+}
