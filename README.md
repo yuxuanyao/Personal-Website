@@ -2,8 +2,10 @@
 
 - [x] Social media accordion 
 - [ ] Blur effect
-- [ ] Parallax Timeline
-- [ ] Split landing page
+- [ ] Parallax 
+- [ ] Timeline side bar
+- [ ] Split landing 
+- [ ] Image Gallery
 
 Cover Photo
 - [ ] Disjointed/Sliced Text

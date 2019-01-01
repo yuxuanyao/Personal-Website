@@ -2,6 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+class Box extends React.Component {
+    render() {
+        return (
+            <div id="box1">
+                <h1>Parallax</h1>
+            </div>
+        )
+    }
+}
+
+
 class TopLevel extends React.Component {
     render() {
         return (

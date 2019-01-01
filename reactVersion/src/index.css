@@ -5,26 +5,32 @@ body{
 #box1{
     height: 100vh;
     width: 100%;
-    background-image: url('./images/i1.jpg');
+    background-image: url('./images/TreeHacks.png');
     background-size: cover;
     display: table;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center; 
 }
 #box2{
     height: 100vh;
     width: 100%;
-    background-image: url('./images/i2.jpg');
+    background-image: url('./images/UofT.jpg');
     background-size: cover;
     display: table;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center; 
 }
 #box3{
     height: 100vh;
     width: 100%;
-    background-image: url('./images/i3.jpg');
+    background-image: url('./images/hackPrinceton.jpg');
     background-size: cover;
     display: table;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center; 
 }
 h1{
     font-family: arial black;
