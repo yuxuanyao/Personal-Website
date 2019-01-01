@@ -20,13 +20,13 @@ body{
 
 
 .box0{
-    background-image: url('./images/TreeHacks.png');
+    background-image: url('./images/timeline/TreeHacks.png');
 }
 .box1{
-    background-image: url('./images/UofT.jpg');
+    background-image: url('./images/timeline/UofT.jpg');
 }
 .box2{
-    background-image: url('./images/hackPrinceton.jpg');
+    background-image: url('./images/timeline/hackPrinceton.jpg');
 }
 h1{
     font-family: arial black;
@@ -117,5 +117,5 @@ h1{
     text-align: left;
     position: relative;
     padding: 20px 40px;
-    
+    list-style-image: url('./images/other/inputIcon.png')
 }
