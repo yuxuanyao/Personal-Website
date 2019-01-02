@@ -11,15 +11,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-
-    
-
- 
 }
 
 .back-blur{
     filter: blur(8px);
     -webkit-filter: blur(8px);
+    background-color: rgba(0,0,0, 0.2); 
 }
 
 .box0{
@@ -59,10 +56,16 @@ h1{
     position: relative;
 }
 
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .see-image{
     position: absolute;
     z-index: 5;
-    left: 150px;
+    /* left: 150px; */
     top: 370px;
     background: none;
     color: #fff;
@@ -71,9 +74,6 @@ h1{
     padding: 10px 20px;
     border-style: dashed; 
     border-width: 2px;
+    text-align: center;
 }
 
-.see-image:hover + .box{
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}

@@ -6,7 +6,7 @@ import './css/terminal.css'
 // aos library for on scroll animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { contentDescription } from './text'
 
 
 
@@ -17,9 +17,13 @@ class Box extends React.Component {
     // renders the list based on list elements
     constructor(props) {
         super(props);
-        // Don't call this.setState() here!
-        this.state = { blur: ' back-blur' };
+        this.state = {
+            blur: ' back-blur'
+
+        };
     }
+
+    // functions to blur background on hover
     blurBg = () => {
         this.setState({ blur: " back-blur" });
     }
@@ -46,12 +50,17 @@ class Box extends React.Component {
                             <div className="green">
                             </div>
                         </div>
-                        <div className="screen">
+                        <div className={"screen"}>
                             <div className="font">
                                 <h1>{this.props.title}</h1>
                                 <ul>{ret}</ul>
                             </div>
-                            <button className="see-image" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</button>
+
+                            <div className="btnContainer">
+                                <button className="see-image" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</button>
+                                <button className="see-image" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -69,32 +78,9 @@ class Timeline extends React.Component {
 
     render() {
 
-        var titles = ["TreeHacks",
+        const titles = ["TreeHacks",
             "Crocker Foundation Bursary",
             "HackPrinceton"];
-
-
-
-        const tH1 = `I'm very honored to have been accepted into TreeHacks at Stanford University!`;
-        const tH2 = `I'm looking forward to learn and imbibe lots of tech related knowledge!`;
-        const tH3 = `(and visiting Silicon Valley!) `;
-
-
-        const cro1 = `"The income from a capital fund established from the estate of the late Beatrice Crocker Glazier in memory of her brother, James William Crocker"`;
-        const cro2 = `"Provides bursaries for students in the Faculty of Medicine and the Faculty of Applied Science and Engineering who are in need and are worthy of financial assistance."`;
-
-
-        const hP1 = `November 11th, 2018 `;
-        const hP2 = `Ceated a program named Avacancy`;
-        const hP3 = `The program detects vacant parking spots within a parking lot using camera footage and python's openCV`;
-
-        // arrays of strings
-        const treeHacks = [tH1, tH2, tH3];
-        const crocker = [cro1, cro2];
-        const hackPrinceton = [hP1, hP2, hP3];
-
-        // 2D array of strings
-        var description = [treeHacks, crocker, hackPrinceton];
 
         // array of Box components
         var contents = [];
@@ -102,7 +88,7 @@ class Timeline extends React.Component {
         for (var i = 0; i < titles.length; ++i) {
             contents.push(<Box cName={'box box' + i}
                 title={titles[i]}
-                description={description[i]} />);
+                description={contentDescription[i]} />);
         }
         return (
             <div>
