@@ -10,6 +10,7 @@
 
 # production
 /build
+fastCommit
 
 # misc
 .DS_Store
