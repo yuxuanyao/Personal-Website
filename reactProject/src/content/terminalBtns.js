@@ -2,16 +2,16 @@ const tHBtn1 = `Official Website`;
 const tHBtn2 = `Image`;
 const tHBtn3 = `View Project`;
 
-const tHLink1 = `http://www.google.com`;
-const tHLink2 = `http://www.google.com`;
-const tHLink3 = `http://www.google.com`;
+const tHLink1 = `https://www.treehacks.com/`;
+const tHLink2 = `#`;
+const tHLink3 = `https://github.com/yuxuanyao`;
 
 
-const croBtn1 = `Official Website`;
-const croBtn2 = `Image`;
+const croBtn1 = `Image`;
+const croBtn2 = `Official Website`;
 
-const croLink1 = `http://www.google.com`;
-const croLink2 = `#`;
+const croLink1 = `#`;
+const croLink2 = `https://portal.engineering.utoronto.ca/sites/calendars/current/Scholarships_and_Financial_Aid.html`;
 
 
 
@@ -19,9 +19,9 @@ const hPBtn1 = `Official Website`;
 const hPBtn2 = `Image`;
 const hPBtn3 = `View Project`;
 
-const hPLink1 = `http://www.google.com`;
-const hPLink2 = `http://www.google.com`;
-const hPLink3 = `http://www.google.com`;
+const hPLink1 = `https://hackprinceton.com/`;
+const hPLink2 = `#`;
+const hPLink3 = `https://github.com/yuxuanyao/Avacancy`;
 
 
 
