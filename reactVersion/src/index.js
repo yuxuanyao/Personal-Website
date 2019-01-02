@@ -13,61 +13,59 @@ import 'aos/dist/aos.css';
 
 
 // box for parallax 
-function Box(props) {
-
-
+class Box extends React.Component {
     // renders the list based on list elements
-    var ret = [];
-    for (var i = 0; i < props.description.length; ++i) {
-        ret.push(<li>{props.description[i]}</li>);
+    constructor(props) {
+        super(props);
+        // Don't call this.setState() here!
+        this.state = { blur: ' back-blur' };
+    }
+    blurBg = () => {
+        this.setState({ blur: " back-blur" });
     }
 
+    unblurBg = () => {
+        this.setState({ blur: '' });
+    }
 
-    return (
-        <div className="parallax-container">
-            <div className="text" >
-                <div className="scroll-container" data-aos='zoom-in-right'>
-                    <div className="bar">
-                        <div className="red">
+    render() {
+        var ret = [];
+        for (var i = 0; i < this.props.description.length; ++i) {
+            ret.push(<li>{this.props.description[i]}</li>);
+        }
+
+        return (
+            <div className="parallax-container">
+                <div className="text" >
+                    <div className="scroll-container" data-aos='zoom-in-right'>
+                        <div className="bar">
+                            <div className="red">
+                            </div>
+                            <div className="yellow">
+                            </div>
+                            <div className="green">
+                            </div>
                         </div>
-                        <div className="yellow">
-                        </div>
-                        <div className="green">
-                        </div>
-                    </div>
-                    <div className="screen">
-                        <div className="font">
-                            <h1>{props.title}</h1>
-                            <ul>{ret}</ul>
+                        <div className="screen">
+                            <div className="font">
+                                <h1>{this.props.title}</h1>
+                                <ul>{ret}</ul>
+                            </div>
+                            <button className="see-image" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</button>
                         </div>
                     </div>
                 </div>
+                <div className={this.props.cName + this.state.blur}>
+                </div>
+
             </div>
-            <div className={props.cName}>
-            </div>
-
-        </div>
-
-    )
-
+        )
+    }
 }
 
 
+
 class Timeline extends React.Component {
-
-    // render parallax box components
-    renderBox(name, title) {
-        return (
-            <Box
-                cName={name}
-                title={title}
-
-            //content={content}
-            />
-        );
-    }
-
-
 
     render() {
 

@@ -12,12 +12,15 @@ body{
     background-attachment: fixed;
     background-position: center; 
 
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    
 
  
 }
 
+.back-blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
 
 .box0{
     background-image: url('../images/timeline/TreeHacks.png');
@@ -56,3 +59,21 @@ h1{
     position: relative;
 }
 
+.see-image{
+    position: absolute;
+    z-index: 5;
+    left: 150px;
+    top: 370px;
+    background: none;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-style: dashed; 
+    border-width: 2px;
+}
+
+.see-image:hover + .box{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
