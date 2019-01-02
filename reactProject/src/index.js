@@ -57,8 +57,8 @@ class Box extends React.Component {
                             </div>
 
                             <div className="btnContainer">
-                                <button className="see-image" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</button>
-                                <button className="see-image" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</button>
+                                <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</div>
+                                <div className="terminalBtn" >View on Github</div>
                             </div>
 
                         </div>

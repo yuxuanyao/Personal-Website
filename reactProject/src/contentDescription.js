@@ -6,8 +6,8 @@ const tH1 = `I'm very honored to have been accepted into TreeHacks at Stanford U
 const tH2 = `I'm looking forward to learn and imbibe lots of tech related knowledge!`;
 const tH3 = `(and visiting Silicon Valley!) `;
 
-const tHl1 = `Official Website`
-const tHl2 = `View Project`
+const tHl1 = `Official Website`;
+const tHl2 = `View Project`;
 
 
 const cro1 = `"The income from a capital fund established from the estate of the late Beatrice Crocker Glazier in memory of her brother, James William Crocker"`;
@@ -23,6 +23,7 @@ const hP3 = `The program detects vacant parking spots within a parking lot using
 
 // arrays of strings
 const treeHacks = [tH1, tH2, tH3];
+//const treeHacksBtn = [tH1, tH2];
 const crocker = [cro1, cro2];
 const hackPrinceton = [hP1, hP2, hP3];
 

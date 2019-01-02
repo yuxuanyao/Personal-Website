@@ -32,7 +32,7 @@ body{
     background-image: url('../images/timeline/hackPrinceton.jpg');
 }
 h1{
-    font-family: arial black;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     color:white;
     margin: 0px;
@@ -59,24 +59,27 @@ h1{
     position: relative;
 }
 
-.btnContainer{
+.btnContainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.see-image{
-    position: absolute;
+.terminalBtn {
     z-index: 5;
-    /* left: 150px; */
     top: 370px;
     background: none;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     padding: 10px 20px;
+    margin: 20px;
     border-style: dashed; 
     border-width: 2px;
     text-align: center;
+    cursor: -webkit-grab; 
+    cursor: grab;
 }
+
 
