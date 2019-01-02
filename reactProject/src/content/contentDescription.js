@@ -1,13 +1,6 @@
-
-
-const links = [];
-
 const tH1 = `I'm very honored to have been accepted into TreeHacks at Stanford University!`;
 const tH2 = `I'm looking forward to learn and imbibe lots of tech related knowledge!`;
 const tH3 = `(and visiting Silicon Valley!) `;
-
-const tHl1 = `Official Website`;
-const tHl2 = `View Project`;
 
 
 const cro1 = `"The income from a capital fund established from the estate of the late Beatrice Crocker Glazier in memory of her brother, James William Crocker"`;

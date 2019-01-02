@@ -6,9 +6,8 @@ import './css/terminal.css'
 // aos library for on scroll animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { contentDescription } from './contentDescription'
-
-
+import { contentDescription } from './content/contentDescription'
+import { terminalButton } from './content/terminalBtns'
 
 
 
@@ -31,7 +30,34 @@ class Box extends React.Component {
     unblurBg = () => {
         this.setState({ blur: '' });
     }
+    renderBtns() {
+        if (this.props.tBtn.length === 3) {
+            return (
+                <div className="btnContainer">
+                    <a href={this.props.tBtn[0][1]} target="_blank">
+                        <div className="terminalBtn" >{this.props.tBtn[0][0]}</div>
+                    </a>
+                    <a href={this.props.tBtn[1][1]} target="_blank">
+                        <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[1][0]}</div>
+                    </a>
+                    <a href={this.props.tBtn[2][1]} target="_blank">
+                        <div className="terminalBtn" >{this.props.tBtn[2][0]}</div>
+                    </a>
+                </div>
+            );
+        }
+        return (
+            <div className="btnContainer">
+                <a href={this.props.tBtn[0][1]}>
+                    <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[0][0]}</div>
+                </a>
+                <a href={this.props.tBtn[1][1]}>
+                    <div className="terminalBtn" >{this.props.tBtn[1][0]}</div>
+                </a>
+            </div>
+        );
 
+    }
     render() {
         var ret = [];
         for (var i = 0; i < this.props.description.length; ++i) {
@@ -56,10 +82,7 @@ class Box extends React.Component {
                                 <ul>{ret}</ul>
                             </div>
 
-                            <div className="btnContainer">
-                                <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>Image</div>
-                                <div className="terminalBtn" >View on Github</div>
-                            </div>
+                            {this.renderBtns()}
 
                         </div>
                     </div>
@@ -89,7 +112,10 @@ class Timeline extends React.Component {
             contents.push(<Box cName={'box box' + i}
                 title={titles[i]}
                 // imported from text.js
-                description={contentDescription[i]} />);
+                description={contentDescription[i]}
+                // imported from terminalBtns.js
+                tBtn={terminalButton[i]}
+            />);
         }
         return (
             <div>
