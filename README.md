@@ -1,8 +1,8 @@
 # Personal-Website
 
 - [x] Social media accordion 
-- [ ] Blur effect
-- [ ] Parallax 
+- [x] Blur effect
+- [x] Parallax 
 - [ ] Timeline side bar
 - [ ] Split landing 
 - [ ] Image Gallery

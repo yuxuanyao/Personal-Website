@@ -6,7 +6,7 @@ import './css/terminal.css'
 // aos library for on scroll animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { contentDescription } from './text'
+import { contentDescription } from './contentDescription'
 
 
 
@@ -88,6 +88,7 @@ class Timeline extends React.Component {
         for (var i = 0; i < titles.length; ++i) {
             contents.push(<Box cName={'box box' + i}
                 title={titles[i]}
+                // imported from text.js
                 description={contentDescription[i]} />);
         }
         return (
