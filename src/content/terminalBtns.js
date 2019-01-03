@@ -1,5 +1,5 @@
 const tHBtn1 = `Official Website`;
-const tHBtn2 = `Image`;
+const tHBtn2 = `Photos`;
 const tHBtn3 = `View Project`;
 
 const tHLink1 = `https://www.treehacks.com/`;
@@ -7,7 +7,7 @@ const tHLink2 = `#`;
 const tHLink3 = `https://github.com/yuxuanyao`;
 
 
-const croBtn1 = `Image`;
+const croBtn1 = `Photos`;
 const croBtn2 = `Official Website`;
 
 const croLink1 = `#`;
@@ -16,7 +16,7 @@ const croLink2 = `https://portal.engineering.utoronto.ca/sites/calendars/current
 
 
 const hPBtn1 = `Official Website`;
-const hPBtn2 = `Image`;
+const hPBtn2 = `Photos`;
 const hPBtn3 = `View Project`;
 
 const hPLink1 = `https://hackprinceton.com/`;

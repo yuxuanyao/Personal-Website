@@ -31,28 +31,34 @@ class Box extends React.Component {
         this.setState({ blur: '' });
     }
     renderBtns() {
-        if (this.props.tBtn.length === 3) {
-            return (
-                <div className="btnContainer">
-                    <a href={this.props.tBtn[0][1]} target="_blank">
-                        <div className="terminalBtn" >{this.props.tBtn[0][0]}</div>
+        var tBtnArr = [];
+        for (var i = 0; i < this.props.tBtn.length; ++i) {
+            if (this.props.tBtn[i][0] == "Photos") {
+                if (this.props.tBtn[i][1] != "#") {
+                    tBtnArr.push(
+                        <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[i][0]}</div>
+                    );
+                }
+                else {
+                    tBtnArr.push(
+                        <a href={this.props.tBtn[i][1]} target="_blank">
+                            <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[i][0]}</div>
+                        </a >
+                    );
+                }
+            }
+            else {
+                tBtnArr.push(
+                    <a href={this.props.tBtn[i][1]} target="_blank">
+                        <div className="terminalBtn" >{this.props.tBtn[i][0]}</div>
                     </a>
-
-                    <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[1][0]}</div>
-
-                    <a href={this.props.tBtn[2][1]} target="_blank">
-                        <div className="terminalBtn" >{this.props.tBtn[2][0]}</div>
-                    </a>
-                </div>
-            );
+                );
+            }
         }
+
         return (
             <div className="btnContainer">
-                <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[0][0]}</div>
-
-                <a href={this.props.tBtn[1][1]}>
-                    <div className="terminalBtn" >{this.props.tBtn[1][0]}</div>
-                </a>
+                {tBtnArr}
             </div>
         );
 
