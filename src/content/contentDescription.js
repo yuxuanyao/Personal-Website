@@ -22,6 +22,10 @@ const hackPrinceton = [hP1, hP2, hP3];
 
 
 // 2D array of strings
-var contentDescription = [treeHacks, crocker, hackPrinceton];
+const contentDescription = [treeHacks, crocker, hackPrinceton];
+const titles = ["TreeHacks",
+    "Crocker Foundation Bursary",
+    "HackPrinceton"];
 
-export { contentDescription };
+
+export { contentDescription, titles };

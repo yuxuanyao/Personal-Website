@@ -1,31 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/parallax.css';
-import './css/terminal.css'
+import './css/terminal.css';
+import './css/tlNav.css';
+
+// font awesome
+import 'font-awesome/css/font-awesome.min.css';
 
 // aos library for on scroll animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { contentDescription } from './content/contentDescription';
+import { contentDescription, titles } from './content/contentDescription';
 import { terminalButton } from './content/terminalBtns';
 
 // timeline box component
 import Box from './parallaxTimeline';
 
 
+
+
+
+
 class Timeline extends React.Component {
 
     render() {
+        const titleArr = titles;
 
-        const titles = ["TreeHacks",
-            "Crocker Foundation Bursary",
-            "HackPrinceton"];
 
         // array of Box components
         var contents = [];
 
         for (var i = 0; i < titles.length; ++i) {
             contents.push(<Box cName={'box box' + i}
+                // imported from content
                 title={titles[i]}
                 // imported from text.js
                 description={contentDescription[i]}
@@ -35,7 +42,7 @@ class Timeline extends React.Component {
         }
         return (
             <div>
-                {contents}
+                <div>{contents}</div>
             </div>
         );
     }

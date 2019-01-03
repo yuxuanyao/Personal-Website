@@ -1,5 +1,6 @@
 import React from 'react';
-
+// timeline nav bar
+import TlNav from './timelineNav';
 
 
 // box for parallax 
@@ -9,7 +10,6 @@ class Box extends React.Component {
         super(props);
         this.state = {
             blur: ' back-blur'
-
         };
     }
 
@@ -66,31 +66,34 @@ class Box extends React.Component {
         }
 
         return (
-            <div className="parallax-container">
-                <div className="text" >
-                    <div className="scroll-container" data-aos='zoom-in-right'>
-                        <div className="bar">
-                            <div className="tCircles red">
+            <div>
+                <TlNav />
+                <div className="parallax-container">
+                    <div className="text" >
+                        <div className="scroll-container" data-aos='zoom-in-right'>
+                            <div className="bar">
+                                <div className="tCircles red">
+                                </div>
+                                <div className="tCircles yellow">
+                                </div>
+                                <div className="tCircles green">
+                                </div>
                             </div>
-                            <div className="tCircles yellow">
-                            </div>
-                            <div className="tCircles green">
-                            </div>
-                        </div>
-                        <div className={"screen"}>
-                            <div className="font">
-                                <h1>{this.props.title}</h1>
-                                <ul>{ret}</ul>
-                            </div>
+                            <div className={"screen"}>
+                                <div className="font">
+                                    <h1>{this.props.title}</h1>
+                                    <ul>{ret}</ul>
+                                </div>
 
-                            {this.renderBtns()}
+                                {this.renderBtns()}
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={this.props.cName + this.state.blur}>
-                </div>
+                    <div className={this.props.cName + this.state.blur}>
+                    </div>
 
+                </div>
             </div>
         )
     }

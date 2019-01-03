@@ -52,7 +52,7 @@ h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 1;
   width: 60%;   
   border-radius: 10px;
   max-width: 750px;
@@ -74,7 +74,6 @@ h1{
 
 
 .terminalBtn {
-    z-index: 5;
     top: 370px;
     background: none;
     color: #fff;
