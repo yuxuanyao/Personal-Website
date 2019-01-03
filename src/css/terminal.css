@@ -1,7 +1,7 @@
 
 .bar {
-    text-align: center;
-    width: 750px;
+    width: 100%;
+    position: relative;
     height: 25px;
     background-color: #DAD9D9;
     margin: 0 auto;
@@ -10,38 +10,26 @@
     float: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tCircles{
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    position:relative;
+    margin: 4px 8px;
 }
 .red {
     background-color: #E98074;
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    margin: 0 auto;
-    left: -47%;
-    bottom: -20%;
-    position:relative;
 }
 .yellow {
     background-color: #d8c3a5;
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    margin: 0 auto;
-    left: -44%;
-    bottom: 40%;
-    position:relative;
-    display: block;
 }
 .green {
     background-color: #8e8d8a;
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    margin: 0 auto;
-    left: -41%;
-    bottom: 99%;
-    position:relative;
-    display: block;
 }
 .screen {
     background-color: rgba(0,0,0, 0.6); 
@@ -51,6 +39,7 @@
     border-bottom-left-radius: 2%;
     margin: 0 auto;
     padding: 1px;
+    width: 100%;
     position: relative;
 }
 .font {
@@ -63,5 +52,47 @@
     list-style-image: url('../images/other/inputIcon.png');
 }
 
+.font li{
+        margin: 8px 0px;
+    }
 /* buttons are in parallax.css */
 
+
+@media only screen and (max-width: 1200px) {
+    .tCircles{
+        width: 13px;
+        height: 13px;
+        margin: 6px 6px;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .font{
+        font-size: 16px;
+    }
+    .font li{
+        margin: 8px 0px;
+    }
+}
+
+/* medium devices */
+@media only screen and (max-width: 992px) {
+    .font{
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    .font li{
+        margin: 8px 0px;
+    }
+    
+} 
+
+/* small devices */
+@media only screen and (max-width: 768px) {
+    .font{
+        padding: 8px 10px;
+    }
+    .font li{
+        margin: 8px 0px;
+    }
+} 
