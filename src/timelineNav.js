@@ -26,12 +26,14 @@ class TlNav extends React.Component {
 
         return (
             <div className="tlNav">
-                <div className="tlNavContainer">
+                <div className={this.state.tlNav + "Container"}>
                     <div className={"tlNavIcon" + this.state.tlNav} onClick={this.tlNavClick}></div>
                 </div>
-                <ul >
-                    {tlNavItems}
-                </ul>
+                <div className={this.state.tlNav + "Content"}>
+                    <ul >
+                        {tlNavItems}
+                    </ul>
+                </div>
             </div>
 
         );

@@ -9,8 +9,11 @@ class Box extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            blur: ' back-blur'
+            blur: ' back-blur',
+            // tlNav: " tlNavClosed"
         };
+
+        // this.tlNavClick = this.tlNavClick.bind(this);
     }
 
     // functions to blur background on hover
@@ -22,6 +25,11 @@ class Box extends React.Component {
     unblurBg = () => {
         this.setState({ blur: '' });
     }
+
+    // tlNavClick() {
+    //     (this.state.tlNav === " tlNavClosed") ? this.setState({ tlNav: " tlNavOpen" }) : this.setState({ tlNav: " tlNavClosed" })
+    // }
+
     renderBtns() {
         var tBtnArr = [];
         // loop through all buttons for this section

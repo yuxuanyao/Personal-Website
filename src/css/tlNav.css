@@ -4,16 +4,23 @@
 }
 
 .tlNav ul {
+    margin-top: 100px;
     list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    height: 100vh;
 }
 
 .tlNavItems{
-    font-weight: 300;
     color: black;
+    font-weight: 600;
+    margin-bottom: 50px;
+    position: relative;
+    width: 60%;
 }
 
 .tlNavIcon{
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     width : 40px;
     height: 40px;
@@ -21,6 +28,7 @@
     background-repeat: no-repeat;
     position: relative;
     filter: invert(100%);
+    
 }
 .tlNavClosed{
     background-image: url("../images/other/tlNavOpen.svg");
@@ -32,8 +40,23 @@
     margin-left: 3px;
 }
 
-.tlNavContainer{
-    margin: 50px;
+.tlNavClosedContent{
+    display: none;
+}
+
+.tlNavOpenContent{
+    background-color: rgba(218,218,218, 0.6); 
+    position: fixed;
+    width: 18vw;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+
+.tlNavClosedContainer{
+    margin: 30px 50px;
     padding: 5px;
     padding-left: 10px;
     width: 40px;
@@ -42,4 +65,21 @@
     background-color: rgba(0,0,0, 0.6); 
     display: flex;
     justify-content: center;
+    z-index: 5;
+    position: fixed;
 }
+
+.tlNavOpenContainer{
+    margin: 30px 12vw;
+    padding: 5px;
+    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    background-color: rgba(0,0,0, 0.6); 
+    display: flex;
+    justify-content: right;
+    z-index: 10;
+    position: fixed;
+}
+

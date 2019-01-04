@@ -102,7 +102,6 @@ h1{
         font-size: 16px;
     }
 
-
 }
 
 
@@ -117,12 +116,9 @@ h1{
 
 @media only screen and (max-width: 768px) {
     .text{
-        width: 90%;
+        width: 80%;
     }
-
-
-
-
-
-
+    .terminalBtn{
+        margin: 10px;
+    }
 } 

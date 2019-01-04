@@ -23,6 +23,7 @@ import Box from './parallaxTimeline';
 
 class Timeline extends React.Component {
 
+
     render() {
         const titleArr = titles;
 
