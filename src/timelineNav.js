@@ -2,17 +2,17 @@ import React from 'react';
 import { titles } from './content/contentDescription';
 
 class TlNav extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            tlNav: " tlNavClosed"
-        };
-        this.tlNavClick = this.tlNavClick.bind(this);
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         tlNav: " tlNavClosed"
+    //     };
+    //     this.tlNavClick = this.tlNavClick.bind(this);
+    // }
 
-    tlNavClick() {
-        (this.state.tlNav === " tlNavClosed") ? this.setState({ tlNav: " tlNavOpen" }) : this.setState({ tlNav: " tlNavClosed" })
-    }
+    // tlNavClick() {
+    //     (this.state.tlNav === " tlNavClosed") ? this.setState({ tlNav: " tlNavOpen" }) : this.setState({ tlNav: " tlNavClosed" })
+    // }
 
     render() {
         var tlNavItems = [];
@@ -26,10 +26,10 @@ class TlNav extends React.Component {
 
         return (
             <div className="tlNav">
-                <div className={this.state.tlNav + "Container"}>
-                    <div className={"tlNavIcon" + this.state.tlNav} onClick={this.tlNavClick}></div>
+                <div className={this.props.tlNav + "Container"}>
+                    <div className={"tlNavIcon" + this.props.tlNav} onClick={this.props.navClickHandler}></div>
                 </div>
-                <div className={this.state.tlNav + "Content"}>
+                <div className={this.props.tlNav + "Content"}>
                     <ul >
                         {tlNavItems}
                     </ul>
