@@ -15,6 +15,8 @@ import { terminalButton } from './content/terminalBtns';
 
 // timeline box component
 import Box from './parallaxTimeline';
+// timeline nav bar
+import TlNav from './timelineNav';
 
 
 
@@ -22,7 +24,18 @@ import Box from './parallaxTimeline';
 
 
 class Timeline extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            tlNav: " tlNavClosed"
+        };
 
+        this.tlNavClick = this.tlNavClick.bind(this);
+    }
+
+    tlNavClick() {
+        (this.state.tlNav === " tlNavClosed") ? this.setState({ tlNav: " tlNavOpen" }) : this.setState({ tlNav: " tlNavClosed" })
+    }
 
     render() {
         const titleArr = titles;
@@ -42,8 +55,12 @@ class Timeline extends React.Component {
             />);
         }
         return (
-            <div>
-                <div>{contents}</div>
+            <div timeLinePageContainer>
+                <TlNav navClickHandler={this.tlNavClick}
+                    tlNav={this.state.tlNav}
+                />
+
+                <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " ")}>{contents}</div>
             </div>
         );
     }

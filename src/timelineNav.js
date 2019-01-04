@@ -2,17 +2,7 @@ import React from 'react';
 import { titles } from './content/contentDescription';
 
 class TlNav extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         tlNav: " tlNavClosed"
-    //     };
-    //     this.tlNavClick = this.tlNavClick.bind(this);
-    // }
 
-    // tlNavClick() {
-    //     (this.state.tlNav === " tlNavClosed") ? this.setState({ tlNav: " tlNavOpen" }) : this.setState({ tlNav: " tlNavClosed" })
-    // }
 
     render() {
         var tlNavItems = [];

@@ -43,7 +43,6 @@ h1{
     text-align: center;
 }
 
-
 .text {
   color: white;
   padding: 20px;
@@ -58,10 +57,12 @@ h1{
   max-width: 750px;
 }
 
-
-
 .parallax-container{
     position: relative;
+}
+
+.with-side-nav{
+    margin-left: 18vw;
 }
 
 .btnContainer {
@@ -70,8 +71,6 @@ h1{
     justify-content: center;
     text-align: center;
 }
-
-
 
 .terminalBtn {
     top: 370px;
@@ -94,6 +93,14 @@ h1{
     border-color: white;
     font-weight: 600;
 }
+
+.timeLinePageContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
 
 
 @media only screen and (max-width: 1200px) {
