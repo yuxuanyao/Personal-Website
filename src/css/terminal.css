@@ -90,9 +90,10 @@
 /* small devices */
 @media only screen and (max-width: 768px) {
     .font{
+        font-size: 14px;
         padding: 8px 10px;
     }
     .font li{
-        margin: 8px 0px;
+        margin: 0px 0px;
     }
 } 

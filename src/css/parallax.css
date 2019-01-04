@@ -80,7 +80,7 @@ h1{
 }
 
 .terminalBtn {
-    top: 370px;
+    position: relative;
     background: none;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
@@ -90,8 +90,7 @@ h1{
     border-style: dashed; 
     border-width: 2px;
     text-align: center;
-    cursor: -webkit-grab; 
-    cursor: grab;
+    cursor: pointer;
 }
 
 .terminalBtn:hover {
@@ -121,7 +120,7 @@ h1{
 
 
 /* medium devices */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
 
 }
 
@@ -132,6 +131,13 @@ h1{
         width: 80%;
     }
     .terminalBtn{
-        margin: 10px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    .with-side-nav{
+        margin-left: 10vw;
     }
 } 
+

@@ -30,6 +30,7 @@
     display: block;
     width: 60%;
     margin-left: 20%;
+    font-size: 16px;
 }
 
 
@@ -44,7 +45,6 @@
     width: 18%;
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
-    z-index: 3;
     top: 0px;
     left: 0px;
     transition: width 0.3s;
@@ -69,7 +69,6 @@
 /* Navbar Open/Close Icon */
 
 .tlNavIcon{
-    z-index: 5;
     width : 40px;
     height: 40px;
     
@@ -89,7 +88,7 @@
 
 
 .tlNavClosedContainer{
-    margin: 30px 50px;
+    margin: 3vh 5vw;
     padding: 5px;
     padding-left: 10px;
     width: 40px;
@@ -98,12 +97,21 @@
     background-color: rgba(0,0,0, 0.6); 
     display: flex;
     justify-content: center;
-    z-index: 5;
+
     position: fixed;
+    transition: margin-left 0.3s ;
+}
+
+.tlNavClosedContainer:hover {
+    background-color: rgba(255,255,255, 0.6); 
+    color: black;
+    border-color: white;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .tlNavOpenContainer{
-    margin: 30px 12vw;
+    margin: 3vh 12vw;
     padding: 5px;
     padding-left: 10px;
     width: 40px;
@@ -112,7 +120,70 @@
     background-color: rgba(0,0,0, 0.6); 
     display: flex;
     justify-content: right;
-    z-index: 10;
+    z-index: 3;
     position: fixed;
+    transition: margin-left 0.3s ;
 }
 
+.tlNavOpenContainer:hover {
+    background-color: rgba(255,255,255, 0.6); 
+    color: black;
+    border-color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* time LINE */
+.tLineOpen {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    margin: 0;
+    margin-left: 10%;
+    border-radius: 5%;
+    transition: margin-left 0.7s ;
+}
+
+.tLineClosed {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    margin: 0;
+    margin-left: -200px;
+    border-radius: 5%;
+}
+
+
+.tLineCircContainer{
+    margin-top: 105px;
+    margin-left: -5px;
+}
+.tLineCircle{
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    position:relative;
+    margin-bottom: 50px;
+    background-color: rgb(121, 162, 201); 
+}
+
+
+@media only screen and (max-width: 992px) {
+    .tlNavItems {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .tlNavOpenContent{
+        width: 50%;
+    }
+    .tlNavOpenBgFix{
+        width: 50%;
+    }
+}
