@@ -10,6 +10,9 @@ import 'font-awesome/css/font-awesome.min.css';
 // aos library for on scroll animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
 import { contentDescription, titles } from './content/contentDescription';
 import { terminalButton } from './content/terminalBtns';
 
@@ -17,6 +20,7 @@ import { terminalButton } from './content/terminalBtns';
 import Box from './parallaxTimeline';
 // timeline nav bar
 import TlNav from './timelineNav';
+
 
 
 
