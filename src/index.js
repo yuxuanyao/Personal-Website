@@ -56,11 +56,15 @@ class Timeline extends React.Component {
         }
         return (
             <div timeLinePageContainer>
-                <TlNav navClickHandler={this.tlNavClick}
-                    tlNav={this.state.tlNav}
-                />
+                <div className={'TLNavContainer' + (this.state.tlNav === " tlNavOpen" ? "Open" : "Closed")}>
+                    <TlNav navClickHandler={this.tlNavClick}
+                        tlNav={this.state.tlNav}
+                    />
+                </div>
 
-                <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " ")}>{contents}</div>
+                <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " no-side-nav")}>
+                    {contents}
+                </div>
             </div>
         );
     }

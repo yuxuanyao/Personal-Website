@@ -10,21 +10,25 @@ class TlNav extends React.Component {
         for (let i = 0; i < titles.length; ++i) {
             tlNavItems.push(
                 // need to add href
-                <li className="tlNavItems">{titles[i]}</li>
+                <div className={"tlNavItems "}>{titles[i]}</div>
             );
         }
 
         return (
             <div className="tlNav">
+                {/* Icon for Opening and Closing NavBar */}
                 <div className={this.props.tlNav + "Container"}>
                     <div className={"tlNavIcon" + this.props.tlNav} onClick={this.props.navClickHandler}></div>
                 </div>
+                {/* to fix background transition */}
+                <div className={this.props.tlNav + "BgFix"}></div>
+                {/* NavBar Contents aka Titles  */}
                 <div className={this.props.tlNav + "Content"}>
-                    <ul >
+                    <div className={"tlNavListContainer " + ((this.props.tlNav === " tlNavOpen") ? " listDisplay" : " listNoDisplay")}>
                         {tlNavItems}
-                    </ul>
+                    </div>
                 </div>
-            </div>
+            </div >
 
         );
     }
