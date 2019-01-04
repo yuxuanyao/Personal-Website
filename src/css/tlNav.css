@@ -33,6 +33,18 @@
     font-size: 16px;
 }
 
+.tlNavListContainer ul li {
+    color: black;
+    list-style-type: none;
+}
+
+/* ul li:before {
+    color: white;
+    float: left;
+    margin: 0 0 0 -1em;
+    width: 1em;
+    content: '\2022';
+} */
 
 .tlNavClosedContent{
     width: 0%;
@@ -139,9 +151,9 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 3px;
+    width: 1px;
     margin: 0;
-    margin-left: 10%;
+    margin-left: 20%;
     border-radius: 5%;
     transition: margin-left 0.7s ;
 }
@@ -172,9 +184,20 @@
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
     .tlNavItems {
         font-size: 14px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .tlNavOpenContent{
+        width: 30%;
+    }
+    .tlNavOpenBgFix{
+        width: 30%;
+    }
+    .tlNavOpenContainer{
+        margin-left: 20%;
     }
     .tlNavOpenContainer{
         width: 30px;

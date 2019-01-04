@@ -121,7 +121,9 @@ h1{
 
 /* medium devices */
 @media only screen and (max-width: 992px) {
-
+    .with-side-nav{
+        margin-left: 30vw;
+    }
 }
 
 /* small devices */

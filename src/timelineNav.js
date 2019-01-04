@@ -12,11 +12,11 @@ class TlNav extends React.Component {
         for (let i = 0; i < titles.length; ++i) {
             tlNavItems.push(
                 // need to add href
-                <div className={"tlNavItems "}>{titles[i]}</div>
+                <li className={"tlNavItems "}>{titles[i]}</li>
             );
-            tLineCircArr.push(
-                <div className={"tLineCircle"}></div>
-            );
+            // tLineCircArr.push(
+            //     <div className={"tLineCircle"}></div>
+            // );
         }
 
 
@@ -37,12 +37,12 @@ class TlNav extends React.Component {
                     <div className={"tLine" + ((this.props.tlNav === " tlNavOpen") ? "Open" : "Closed")}>
                         {/* the circles in the line */}
                         <div className={"tLineCircContainer"}>
-                            {tLineCircArr}
+                            {/* {tLineCircArr} */}
                         </div>
                     </div>
-                    <div className={"tlNavListContainer " + ((this.props.tlNav === " tlNavOpen") ? " listDisplay" : " listNoDisplay")}>
+                    <ul className={"tlNavListContainer " + ((this.props.tlNav === " tlNavOpen") ? " listDisplay" : " listNoDisplay")}>
                         {tlNavItems}
-                    </div>
+                    </ul>
 
                 </div>
 
