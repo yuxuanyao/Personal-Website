@@ -176,6 +176,14 @@
     .tlNavItems {
         font-size: 14px;
     }
+    .tlNavOpenContainer{
+        width: 30px;
+        height: 30px;
+        padding-top: 1px;
+        padding-left: 3px;
+        padding-right: 5px;
+        padding-bottom: 7px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -185,5 +193,8 @@
     }
     .tlNavOpenBgFix{
         width: 50%;
+    }
+    .tlNavOpenContainer{
+        margin-left: 35%;
     }
 }
