@@ -1,7 +1,13 @@
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 .tlNav{
     top:0;
     position: fixed;
     z-index: 2;
+    overflow: hidden;
 }
 
 .tlNavListContainer {
@@ -70,6 +76,8 @@
     top: 0;
     left: 0;
     transition: width 0.3s;
+    overflow-y: scroll;
+    box-sizing: content-box;
 }
 
 .tlNavClosedBgFix {
@@ -161,6 +169,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    height: 150%;
     width: 1px;
     margin: 0;
     margin-left: 20%;

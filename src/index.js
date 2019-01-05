@@ -24,6 +24,7 @@ import TlNav from './timelineNav';
 // timeline section divider
 import Divider from './tlDivider';
 
+import { tlIntroContent } from './content/tlDividerContent';
 
 
 class Timeline extends React.Component {
@@ -67,7 +68,7 @@ class Timeline extends React.Component {
 
                 <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " no-side-nav")}>
                     <Divider dividerTitle={`Yuxuan's Timeline of Extracurriculars and Achievements`}
-                        dividerContent={`some content`} />
+                        dividerContent={tlIntroContent} />
 
                     {contents}
                 </div>

@@ -4,7 +4,21 @@ import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, 
 
 
 class Divider extends React.Component {
+
     render() {
+        var dividerContentArr = [];
+        for (var i = 0; i < this.props.dividerContent.length; ++i) {
+            if (i > 1) {
+                dividerContentArr.push(
+                    <li>{this.props.dividerContent[i]}</li>
+                );
+            }
+            else {
+                dividerContentArr.push(
+                    <p>{this.props.dividerContent[i]}</p>
+                );
+            }
+        }
         return (
             <div className="parallax-container">
                 <Element name={this.props.title} className="element" ></Element>
@@ -13,7 +27,7 @@ class Divider extends React.Component {
                         <div className={"tlDividerScreen"}>
                             <div className="font">
                                 <h1>{this.props.dividerTitle}</h1>
-                                <ul>{this.props.dividerContent}</ul>
+                                <ul>{dividerContentArr}</ul>
                             </div>
                         </div>
                     </div>
