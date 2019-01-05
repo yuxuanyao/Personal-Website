@@ -49,7 +49,21 @@ const uHBtn2 = `Photos`;
 const uHLink1 = `http://www.utra.ca/hackathon/`;
 const uHLink2 = `https://www.flickr.com/photos/160322496@N03/sets/72157673113302697/`;
 
+// telus iot hackathon
 
+const telusBtn1 = `Official Website`;
+const telusBtn2 = `Photos`;
+const telusBtn3 = `View Project`;
+
+const telusLink1 = `https://ieee.utoronto.ca/iothackathon/`;
+const telusLink2 = `#`;
+const telusLink3 = `https://devpost.com/software/cansorter`;
+
+const froshBtn1 = `Official Website`;
+const froshBtn2 = `Photos`;
+
+const froshLink1 = `http://blog.orientation.skule.ca/`;
+const froshLink2 = `https://www.photos.skule.ca/1T8-1T9/Frosh-Week-1T8/Frosh-Groups/Ni/i-H8Gt2d2?fbclid=IwAR2k0WQjMGOxZLteIAG3zpfqbEuZobIdaHEC73dl3RKsW1M0JJckFJhf0AI`;
 
 const tHPair = [
     [tHBtn1, tHLink1],
@@ -86,7 +100,18 @@ const uHPair = [
     [uHBtn2, uHLink2],
 ]
 
-const terminalButton = [tHPair, croPair, fpgaPair, astPair, hPPair, uHPair];
+const telusPair = [
+    [telusBtn1, telusLink1],
+    [telusBtn2, telusLink2],
+    [telusBtn3, telusLink3],
+]
+
+const froshPair = [
+    [froshBtn1, froshLink1],
+    [froshBtn2, froshLink2],
+];
+
+const terminalButton = [tHPair, croPair, fpgaPair, astPair, hPPair, uHPair, telusPair, froshPair];
 
 
 export { terminalButton };

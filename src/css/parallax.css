@@ -45,6 +45,12 @@ a {
 .box5{
     background-image: url('../images/timeline/utraHacks.png');
 }
+.box6{
+    background-image: url('../images/timeline/telusIoT.png');
+}
+.box7{
+    background-image: url("../images/timeline/frosh.jpg");
+}
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;

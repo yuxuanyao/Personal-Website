@@ -36,9 +36,9 @@ class Box extends React.Component {
         // loop through all buttons for this section
         for (var i = 0; i < this.props.tBtn.length; ++i) {
             // photos button for special effects
-            if (this.props.tBtn[i][0] == "Photos") {
+            if (this.props.tBtn[i][0] === "Photos") {
                 // if no link, don't make it clickable
-                if (this.props.tBtn[i][1] == "#") {
+                if (this.props.tBtn[i][1] === "#") {
                     tBtnArr.push(
                         <div className="terminalBtn" onMouseEnter={this.unblurBg} onMouseLeave={this.blurBg}>{this.props.tBtn[i][0]}</div>
                     );
@@ -51,6 +51,9 @@ class Box extends React.Component {
                         </a >
                     );
                 }
+            }
+            else if (this.props.tBtn[i][1] === "#") {
+                tBtnArr.push(<div className="terminalBtn" >{this.props.tBtn[i][0]}</div>);
             }
             // other buttons
             else {
