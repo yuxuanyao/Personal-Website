@@ -78,8 +78,11 @@
 /* medium devices */
 @media only screen and (max-width: 992px) {
     .font{
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px 30px;
+    }
+    .font h1{
+        font-size: 23px;
     }
     .font li{
         margin: 8px 0px;

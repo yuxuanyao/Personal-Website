@@ -33,10 +33,6 @@ class TlNav extends React.Component {
                 <div className={this.props.tlNav + "Content"}>
                     {/* the actual line */}
                     <div className={"tLine" + ((this.props.tlNav === " tlNavOpen") ? "Open" : "Closed")}>
-                        {/* the circles in the line */}
-                        <div className={"tLineCircContainer"}>
-                            {/* {tLineCircArr} */}
-                        </div>
                     </div>
                     <ul className={"tlNavListContainer " + ((this.props.tlNav === " tlNavOpen") ? " listDisplay" : " listNoDisplay")}>
                         {tlNavItems}

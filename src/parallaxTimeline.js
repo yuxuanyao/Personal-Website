@@ -11,10 +11,8 @@ class Box extends React.Component {
         super(props);
         this.state = {
             blur: ' back-blur',
-            // tlNav: " tlNavClosed"
         };
 
-        // this.tlNavClick = this.tlNavClick.bind(this);
     }
 
     // functions to blur background on hover
@@ -27,9 +25,6 @@ class Box extends React.Component {
         this.setState({ blur: '' });
     }
 
-    // tlNavClick() {
-    //     (this.state.tlNav === " tlNavClosed") ? this.setState({ tlNav: " tlNavOpen" }) : this.setState({ tlNav: " tlNavClosed" })
-    // }
 
     renderBtns() {
         var tBtnArr = [];
@@ -105,7 +100,7 @@ class Box extends React.Component {
                 </div>
 
             </div>
-        )
+        );
     }
 }
 

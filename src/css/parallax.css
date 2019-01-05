@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }    
 
 a {
@@ -20,13 +21,36 @@ a {
     transition: 500ms;
     background-color: black;
 }
-
+/* Intro  */
 .introPage{
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-image: url('../images/meAtEvergreen.jpg');
+    display: table;
+    justify-content: center;
+    position: relative;
 }
+
+.introTLbg{
+    background-image: url('../images/meAtEvergreen.jpg');
+}
+
+
+.introPageContentContainer{
+    color: rgba(0,0,0, 0.6);
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 60%;   
+    border-radius: 10px;
+    max-width: 750px;
+}
+
 
 .back-blur{
     filter: blur(8px);

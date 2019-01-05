@@ -38,6 +38,10 @@
     cursor: pointer;
 }
 
+.tlNavIcon:hover{
+    filter: invert(0%)
+}
+
 .tlNavListContainer ul li {
     color: black;
     list-style-type: none;
