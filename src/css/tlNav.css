@@ -33,6 +33,11 @@
     font-size: 16px;
 }
 
+.tlNavItems:hover{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
 .tlNavListContainer ul li {
     color: black;
     list-style-type: none;

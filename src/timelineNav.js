@@ -7,8 +7,6 @@ class TlNav extends React.Component {
 
     render() {
         var tlNavItems = [];
-        // timeline NavBar Items (titles)
-        var tLineCircArr = [];
 
         for (let i = 0; i < titles.length; ++i) {
             tlNavItems.push(
@@ -17,9 +15,6 @@ class TlNav extends React.Component {
                     <Link activeClass="active" to={titles[i]} spy={true} smooth={true} duration={500} >{titles[i]}</Link>
                 </li>
             );
-            // tLineCircArr.push(
-            //     <div className={"tLineCircle"}></div>
-            // );
         }
 
 

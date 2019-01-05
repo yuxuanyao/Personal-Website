@@ -34,11 +34,20 @@ a {
     background-image: url('../images/timeline/UofT.jpg');
 }
 .box2{
+    background-image: url('../images/timeline/fpgaTrumpet.jpg');
+}
+.box3 { 
+    background-image: url('../images/timeline/asteroids.jpg');
+}
+.box4{
     background-image: url('../images/timeline/hackPrinceton.jpg');
+}
+.box5{
+    background-image: url('../images/timeline/utraHacks.png');
 }
 h1{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+    font-size: 40px;
     color:white;
     margin: 0px;
     text-align: center;
@@ -85,8 +94,8 @@ h1{
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
-    padding: 10px 20px;
-    margin: 20px;
+    padding: 10px 15px;
+    margin: 0px 20px;
     border-style: dashed; 
     border-width: 2px;
     text-align: center;
