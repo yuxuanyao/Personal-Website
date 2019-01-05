@@ -67,6 +67,9 @@ class Timeline extends React.Component {
                 </div>
 
                 <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " no-side-nav")}>
+                    <div className="introPage box">
+
+                    </div>
                     {contents}
                 </div>
             </div>
