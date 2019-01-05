@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './css/parallax.css';
 import './css/terminal.css';
 import './css/tlNav.css';
+import './css/tlDivider.css'
 
 // font awesome
 import 'font-awesome/css/font-awesome.min.css';
@@ -21,11 +22,7 @@ import Box from './parallaxTimeline';
 // timeline nav bar
 import TlNav from './timelineNav';
 // timeline section divider
-import divider from './introTL';
-
-
-
-
+import Divider from './tlDivider';
 
 
 
@@ -69,25 +66,8 @@ class Timeline extends React.Component {
                 </div>
 
                 <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " no-side-nav")}>
-                    {/* <divider tlDividerTitle={`Yuxuan's Timeline of Extracurriculars and Achievements`}
-                        tlDividerContent={`some content`} /> */}
-
-
-                    <div className="parallax-container">
-                        <Element name={this.props.title} className="element" ></Element>
-                        <div className="text" >
-                            <div className="scroll-container" data-aos='zoom-in-right'>
-                                <div className={"screen"}>
-                                    <div className="font">
-                                        <h1>something</h1>
-                                        <ul>something</ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="box introTLbg"></div>
-                    </div>
-
+                    <Divider dividerTitle={`Yuxuan's Timeline of Extracurriculars and Achievements`}
+                        dividerContent={`some content`} />
 
                     {contents}
                 </div>

@@ -1,4 +1,5 @@
 .tlNav{
+    top:0;
     position: fixed;
     z-index: 2;
 }
@@ -66,8 +67,8 @@
     width: 18%;
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     transition: width 0.3s;
 }
 
@@ -92,7 +93,7 @@
 .tlNavIcon{
     width : 40px;
     height: 40px;
-    
+    top: 0;
     background-repeat: no-repeat;
     position: relative;
     filter: invert(100%);

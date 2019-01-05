@@ -1,6 +1,4 @@
 import React from 'react';
-// timeline nav bar
-import TlNav from './timelineNav';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
