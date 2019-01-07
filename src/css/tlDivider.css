@@ -1,19 +1,43 @@
-.tlDividerScreen {
+.tlIntroPage {
     background-color: rgba(0,0,0, 0.6); 
     width: 80%;
     height: 600px;
     border-radius: 2%;
     margin: 0 auto;
-    margin-top: -15%;
+    margin-top: -10%;
     padding: 1px;
     width: 99.8%;
     position: relative;
 }
 
-.tlDividerScreen li {
+.tlIntroPage li {
     font-weight: 600;
 }
 
-.tlDividerScreen ul p {
+.tlIntroPage ul p {
     font-weight: 500;
 }
+/* 
+.secondYear {
+    background-color: rgba(0,0,0, 0.6); 
+    width: 80%;
+    height: 300px;
+    border-radius: 2%;
+    margin: 0 auto;
+    padding: 1px;
+    width: 99.8%;
+    position: relative;
+    filter: invert(98%);
+} */
+
+.secondYear p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    .secondYear p {
+    font-size: 15px;
+}
+}
+

@@ -24,7 +24,7 @@ import TlNav from './timelineNav';
 // timeline section divider
 import Divider from './tlDivider';
 
-import { tlIntroContent } from './content/tlDividerContent';
+import { tlIntroContent, secondYear, firstYear } from './content/tlDividerContent';
 
 
 class Timeline extends React.Component {
@@ -68,9 +68,18 @@ class Timeline extends React.Component {
 
                 <div className={(this.state.tlNav === " tlNavOpen" ? " with-side-nav" : " no-side-nav")}>
                     <Divider dividerTitle={`Yuxuan's Timeline of Extracurriculars and Achievements`}
-                        dividerContent={tlIntroContent} />
-
+                        dividerContent={tlIntroContent}
+                        dividerCname={"tlIntroPage"}
+                        dividerBgName={"introTLbg"} />
+                    <Divider dividerTitle={`Second Year (Current)`}
+                        dividerContent={secondYear}
+                        dividerCname={"secondYear"}
+                        dividerBgName="secondYearbg" />
                     {contents}
+                    <Divider dividerTitle={`First Year`}
+                        dividerContent={firstYear}
+                        dividerCname={"firstYear"}
+                        dividerBgName={"firstYearbg"} />
                 </div>
             </div>
         );

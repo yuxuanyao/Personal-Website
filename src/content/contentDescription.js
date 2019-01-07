@@ -77,4 +77,55 @@ const titles = ["TreeHacks",
 ];
 
 
-export { contentDescription, titles };
+// FIRST YEAR STUFF 
+const robo1 = ``;
+const robo2 = ``;
+const robo3 = ``;
+
+const spon1 = ``;
+const spon2 = ``;
+const spon3 = ``;
+
+const ilead1 = ``;
+const ilead2 = ``;
+const ilead3 = ``;
+
+const sumo1 = ``;
+const sumo2 = ``;
+const sumo3 = ``;
+
+const bmec1 = ``;
+const bmec2 = ``;
+const bmec3 = ``;
+
+const firstWeb1 = ``;
+const firstWeb2 = ``;
+const firstWeb3 = ``;
+
+const robo = [robo1, robo2, robo3];
+const spon = [spon1, spon2, spon3];
+const ilead = [ilead1, ilead2, ilead3];
+const sumo = [sumo1, sumo2, sumo3];
+const bmec = [bmec1, bmec2, bmec3];
+const firstWeb = [firstWeb1, firstWeb2, firstWeb3];
+
+const firstYearContent = [
+    robo,
+    spon,
+    ilead,
+    sumo,
+    bmec,
+    firstWeb
+];
+
+const fyContent = [
+    `RoboEdu/RoboStorm (work)`,
+    `Sponsorships and Finance Director (UTRA)`,
+    `Troost Institute of Leadership in Engineering Education`,
+    `Sumo Competition (UTRA)`,
+    `Biomedical Engineering Competition`,
+    'My First Website / Side Project '
+];
+
+
+export { contentDescription, titles, fyContent, fyTitles };

@@ -24,7 +24,7 @@ class Divider extends React.Component {
                 <Element name={this.props.title} className="element" ></Element>
                 <div className="text tlDivider" >
                     <div className="scroll-container" data-aos='zoom-in-right'>
-                        <div className={"tlDividerScreen"}>
+                        <div className={this.props.dividerCname}>
                             <div className="font">
                                 <h1>{this.props.dividerTitle}</h1>
                                 <ul>{dividerContentArr}</ul>
@@ -32,7 +32,7 @@ class Divider extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="box introTLbg"></div>
+                <div className={"box " + this.props.dividerBgName}></div>
             </div>
         )
     }

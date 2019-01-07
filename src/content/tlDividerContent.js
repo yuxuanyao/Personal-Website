@@ -8,6 +8,11 @@ const tlIntroPt2 = "Sponsorships Director (University of Toronto's Robotics Asso
 const tlIntroPt3 = "The Upcoming TreeHacks at Stanford University"
 const tlIntroPt4 = "First Place for UTRA SUMO Robot competition"
 
+const secondYear1 = `This is where I began to understand the concept of programming much better, allowing me to attend events that could allow me to learn even more! (also where I gained confidence in my own skills)`;
+
+const firstYear1 = ``;
+const firstYear2 = ``;
+
 
 const tlIntroContent = [
     tlIntroContent1,
@@ -18,4 +23,13 @@ const tlIntroContent = [
     tlIntroPt4,
 ]
 
-export { tlIntroContent };
+const secondYear = [
+    // secondYear1,
+];
+
+const firstYear = [
+    firstYear1,
+    firstYear2
+]
+
+export { tlIntroContent, secondYear, firstYear };
