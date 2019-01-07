@@ -1,7 +1,7 @@
 
 // Tree Hacks 
 const tHBtn1 = `Official Website`;
-const tHBtn2 = `Photos`;
+const tHBtn2 = `Image`;
 const tHBtn3 = `View Project`;
 
 const tHLink1 = `https://www.treehacks.com/`;
@@ -10,7 +10,7 @@ const tHLink3 = `https://github.com/yuxuanyao`;
 
 
 // Crocker Foundation Bursary
-const croBtn1 = `Photos`;
+const croBtn1 = `Image`;
 const croBtn2 = `Official Website`;
 
 const croLink1 = `#`;
@@ -19,7 +19,7 @@ const croLink2 = `https://portal.engineering.utoronto.ca/sites/calendars/current
 
 // FPGA Trumpet
 const fpgaBtn1 = `Official Website`
-const fpgaBtn2 = `Photos`;
+const fpgaBtn2 = `Image`;
 const fpgaBtn3 = `View Project`
 
 const fpgaLink1 = `https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836`;
@@ -27,7 +27,7 @@ const fpgaLink2 = `#`;
 const fpgaLink3 = `https://github.com/yuxuanyao/FPGA-Trumpet-Practice-Tool`;
 
 // Asteroid shooting
-const astBtn1 = `Photos`;
+const astBtn1 = `Image`;
 const astBtn2 = `No Source Code (School Assignment)`;
 
 const astLink1 = '#';
@@ -35,7 +35,7 @@ const astLink2 = '#';
 
 // HackPrinceton
 const hPBtn1 = `Official Website`;
-const hPBtn2 = `Photos`;
+const hPBtn2 = `Image`;
 const hPBtn3 = `View Project`;
 
 const hPLink1 = `https://hackprinceton.com/`;
@@ -52,7 +52,7 @@ const uHLink2 = `https://www.flickr.com/photos/160322496@N03/sets/72157673113302
 // telus iot hackathon
 
 const telusBtn1 = `Official Website`;
-const telusBtn2 = `Photos`;
+const telusBtn2 = `Image`;
 const telusBtn3 = `View Project`;
 
 const telusLink1 = `https://ieee.utoronto.ca/iothackathon/`;
@@ -115,49 +115,56 @@ const terminalButton = [tHPair, croPair, fpgaPair, astPair, hPPair, uHPair, telu
 
 
 // FIRST YEAR   
-const roboBtn1 = ``;
+const roboBtn1 = `Official Website`;
+const roboBtn2 = `Image`;
 
-const roboLink1 = ``;
-
-
-const sponBtn1 = ``;
-const sponBtn2 = ``;
-
-const sponLink1 = ``;
-const sponLink2 = ``;
+const roboLink1 = `#`;
+const roboLink2 = `#`;
 
 
-const ileadBtn1 = ``;
-const ileadBtn2 = ``;
+const sponBtn1 = `Official Website`;
+const sponBtn2 = `Image`;
+
+const sponLink1 = `http://www.utra.ca/`;
+const sponLink2 = `#`;
+
+
+const ileadBtn1 = `Official Website`;
+const ileadBtn2 = `Image`;
 
 const ileadLink1 = ``;
-const ileadLink2 = ``;
+const ileadLink2 = `#`;
 
 
-const sumoBtn1 = ``;
-const sumoBtn2 = ``;
+const sumoBtn1 = `Official Website`;
+const sumoBtn2 = `Photos`;
+const sumoBtn3 = `View Project`;
 
-const sumoLink1 = ``;
-const sumoLink2 = ``;
+const sumoLink1 = `http://www.utra.ca/teams/sumo/`;
+const sumoLink2 = `https://photos.google.com/share/AF1QipNmVc5a0E2ftiB4lG-gvegLI3uKgNsn_VBQYFClcrKu0TnOZdBY06xUtbwt8c-sfA?key=QkYzeXF4UlBidHUxenZGQm9jd3lHMjNDeXVybDln`;
+const sumoLink3 = ``; // need to upload to github
+
+const bmecBtn1 = `Official Website`;
+const bmecBtn2 = `Image`;
+const bmecBtn3 = `View Project`;
+
+const bmecLink1 = `https://cube.skule.ca/index.php/bmec/`;
+const bmecLink2 = `#`;
+const bmecLink3 = ``;
 
 
-const bmecBtn1 = ``;
-const bmecBtn2 = ``;
+const myFirstBtn1 = `View Project`;
+const myFirstBtn2 = `Image`;
+const myFirstBtn3 = `https://github.com/yuxuanyao/Top-TV-Shows`;
 
-const bmecLink1 = ``;
-const bmecLink2 = ``;
-
-
-const myFirstBtn1 = ``;
-const myFirstBtn2 = ``;
-
-const myFirstLink1 = ``;
-const myFirstLink2 = ``;
+const myFirstLink1 = `https://github.com/yuxuanyao/Top-TV-Shows`;
+const myFirstLink2 = `#`;
+const myFirstLink3 = `https://github.com/yuxuanyao/Top-TV-Shows`;
 
 
 const roboPair = [
     [roboBtn1, roboLink1],
-    // [roboBtn2, roboLink2]
+    [roboBtn2, roboLink2]
 ];
 
 const sponPair = [
@@ -172,12 +179,14 @@ const ileadPair = [
 
 const sumoPair = [
     [sumoBtn1, sumoLink1],
-    [sumoBtn2, sumoLink2]
+    [sumoBtn2, sumoLink2],
+    [sumoBtn3, sumoLink3]
 ];
 
 const bmecPair = [
     [bmecBtn1, bmecLink1],
-    [bmecBtn2, bmecLink2]
+    [bmecBtn2, bmecLink2],
+    [bmecBtn3, bmecLink3],
 ];
 
 
