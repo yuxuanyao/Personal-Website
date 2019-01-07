@@ -118,7 +118,7 @@ const terminalButton = [tHPair, croPair, fpgaPair, astPair, hPPair, uHPair, telu
 const roboBtn1 = `Official Website`;
 const roboBtn2 = `Image`;
 
-const roboLink1 = `#`;
+const roboLink1 = `https://www.robokids.io/`;
 const roboLink2 = `#`;
 
 
@@ -132,7 +132,7 @@ const sponLink2 = `#`;
 const ileadBtn1 = `Official Website`;
 const ileadBtn2 = `Image`;
 
-const ileadLink1 = ``;
+const ileadLink1 = `https://www.facebook.com/pg/ileaduoft/photos/?ref=page_internal`;
 const ileadLink2 = `#`;
 
 
@@ -144,13 +144,13 @@ const sumoLink1 = `http://www.utra.ca/teams/sumo/`;
 const sumoLink2 = `https://photos.google.com/share/AF1QipNmVc5a0E2ftiB4lG-gvegLI3uKgNsn_VBQYFClcrKu0TnOZdBY06xUtbwt8c-sfA?key=QkYzeXF4UlBidHUxenZGQm9jd3lHMjNDeXVybDln`;
 const sumoLink3 = ``; // need to upload to github
 
-const bmecBtn1 = `Official Website`;
-const bmecBtn2 = `Image`;
-const bmecBtn3 = `View Project`;
+// const bmecBtn1 = `Official Website`;
+// const bmecBtn2 = `Image`;
+// const bmecBtn3 = `View Project`;
 
-const bmecLink1 = `https://cube.skule.ca/index.php/bmec/`;
-const bmecLink2 = `#`;
-const bmecLink3 = ``;
+// const bmecLink1 = `https://cube.skule.ca/index.php/bmec/`;
+// const bmecLink2 = `#`;
+// const bmecLink3 = ``;
 
 
 const myFirstBtn1 = `View Project`;
@@ -183,11 +183,11 @@ const sumoPair = [
     [sumoBtn3, sumoLink3]
 ];
 
-const bmecPair = [
-    [bmecBtn1, bmecLink1],
-    [bmecBtn2, bmecLink2],
-    [bmecBtn3, bmecLink3],
-];
+// const bmecPair = [
+//     [bmecBtn1, bmecLink1],
+//     [bmecBtn2, bmecLink2],
+//     [bmecBtn3, bmecLink3],
+// ];
 
 
 const myFirstPair = [
@@ -197,7 +197,7 @@ const myFirstPair = [
 
 
 
-const fyTerminalButton = [roboPair, sponPair, ileadPair, sumoPair, bmecPair, myFirstPair];
+const fyTerminalButton = [roboPair, sponPair, ileadPair, sumoPair, myFirstPair];
 
 
 export { terminalButton, fyTerminalButton };

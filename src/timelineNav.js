@@ -1,5 +1,5 @@
 import React from 'react';
-import { titles } from './content/contentDescription';
+import { titles, fyTitles } from './content/contentDescription';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class TlNav extends React.Component {
@@ -13,6 +13,15 @@ class TlNav extends React.Component {
                 // need to add href
                 <li className={"tlNavItems "}>
                     <Link activeClass="active" to={titles[i]} spy={true} smooth={true} duration={500} >{titles[i]}</Link>
+                </li>
+            );
+        }
+
+        for (let i = 0; i < fyTitles.length; ++i) {
+            tlNavItems.push(
+                // need to add href
+                <li className={"tlNavItems "}>
+                    <Link activeClass="active" to={fyTitles[i]} spy={true} smooth={true} duration={500} >{fyTitles[i]}</Link>
                 </li>
             );
         }

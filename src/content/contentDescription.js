@@ -78,34 +78,39 @@ const titles = ["TreeHacks",
 
 
 // FIRST YEAR STUFF 
-const robo1 = ``;
-const robo2 = ``;
-const robo3 = ``;
+const robo1 = `June-September, 2018`;
+const robo2 = `Educated students with programming concepts and 3D design concepts using Scratch, Lego Mindstorm, and TinkerCAD`;
+const robo3 = `Re-created popular games with students using Scratch (e.g. Pacman, Super Mario, Plants vs Zombies)`;
+const robo4 = `Assisted and guided students to assemble and program VEX IQ robots`;
 
-const spon1 = ``;
-const spon2 = ``;
-const spon3 = ``;
+const spon1 = `April, 2018 - Current `;
+const spon2 = `Allocated budget for sub-divisions of the association`;
+const spon3 = `Reached out to sponsors to renew contracts/request partnership and communicate club needs`;
+const spon4 = `Aqcuired sponsorship from Particle, Leapmotion, Solidworks, and more`
 
-const ilead1 = ``;
-const ilead2 = ``;
-const ilead3 = ``;
+const ilead1 = `October, 2017 - March, 2018`;
+const ilead2 = `Consulted professors in the relevant field regarding the issues around second hand smoke`;
+const ilead3 = `Created documents to outline the problem and provided solution over the course of 6 months`;
 
-const sumo1 = ``;
-const sumo2 = ``;
-const sumo3 = ``;
+const sumo1 = `October, 2017 - April, 2018`;
+const sumo2 = `Rank 1/40`;
+const sumo3 = `Programmed the robot with Arduino UNO using sensors and microcontrollers`;
+const sumo4 = `Soldered and connected components onto the PCB and used sheet metal to create robot’s shell from teammate's CAD model`;
+const sumo5 = `Responsible for software in a team of three (other roles: mechanical design, circuitry)`
 
 const bmec1 = ``;
 const bmec2 = ``;
 const bmec3 = ``;
 
-const firstWeb1 = ``;
-const firstWeb2 = ``;
-const firstWeb3 = ``;
+const firstWeb1 = `December, 2017 -  January, 2018`;
+const firstWeb2 = `Created a static page using HTML/CSS/Javascript that displayed my favorite TV shows`;
+const firstWeb3 = `First time making/finishing something by myself (hooked on coding projects ever since)`;
+const firstWeb4 = `Utilized Bootstrap to divide contents and embedded youtube videos on the page`
 
-const robo = [robo1, robo2, robo3];
-const spon = [spon1, spon2, spon3];
+const robo = [robo1, robo2, robo3, robo4];
+const spon = [spon1, spon2, spon3, spon4];
 const ilead = [ilead1, ilead2, ilead3];
-const sumo = [sumo1, sumo2, sumo3];
+const sumo = [sumo1, sumo2, sumo3, sumo4, sumo5];
 const bmec = [bmec1, bmec2, bmec3];
 const firstWeb = [firstWeb1, firstWeb2, firstWeb3];
 
@@ -114,7 +119,7 @@ const fyContent = [
     spon,
     ilead,
     sumo,
-    bmec,
+    // bmec,
     firstWeb
 ];
 
@@ -123,7 +128,7 @@ const fyTitles = [
     `Sponsorships and Finance Director (UTRA)`,
     `Troost Institute of Leadership in Engineering Education`,
     `Sumo Competition (UTRA)`,
-    `Biomedical Engineering Competition`,
+    // `Biomedical Engineering Competition`,
     'My First Website / Side Project '
 ];
 
