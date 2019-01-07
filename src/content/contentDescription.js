@@ -109,7 +109,7 @@ const sumo = [sumo1, sumo2, sumo3];
 const bmec = [bmec1, bmec2, bmec3];
 const firstWeb = [firstWeb1, firstWeb2, firstWeb3];
 
-const firstYearContent = [
+const fyContent = [
     robo,
     spon,
     ilead,
@@ -118,7 +118,7 @@ const firstYearContent = [
     firstWeb
 ];
 
-const fyContent = [
+const fyTitles = [
     `RoboEdu/RoboStorm (work)`,
     `Sponsorships and Finance Director (UTRA)`,
     `Troost Institute of Leadership in Engineering Education`,
@@ -126,6 +126,7 @@ const fyContent = [
     `Biomedical Engineering Competition`,
     'My First Website / Side Project '
 ];
+
 
 
 export { contentDescription, titles, fyContent, fyTitles };

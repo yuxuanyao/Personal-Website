@@ -114,6 +114,64 @@ const froshPair = [
 const terminalButton = [tHPair, croPair, fpgaPair, astPair, hPPair, uHPair, telusPair, froshPair];
 
 
-export { terminalButton };
+// FIRST YEAR   
+const roboBtn1 = ``;
+
+const roboLink1 = ``;
+
+
+const sponBtn1 = ``;
+const sponBtn2 = ``;
+
+const sponLink1 = ``;
+const sponLink2 = ``;
+
+
+const ileadBtn1 = ``;
+const ileadBtn2 = ``;
+
+const ileadLink1 = ``;
+const ileadLink2 = ``;
+
+
+const sumoBtn1 = ``;
+const sumoBtn2 = ``;
+
+const sumoLink1 = ``;
+const sumoLink2 = ``;
+
+
+const bmecBtn1 = ``;
+const bmecBtn2 = ``;
+
+const bmecLink1 = ``;
+const bmecLink2 = ``;
+
+
+const myFirstBtn1 = ``;
+const myFirstBtn2 = ``;
+
+const myFirstLink1 = ``;
+const myFirstLink2 = ``;
+
+
+const
+
+
+
+
+
+
+
+
+
+
+
+
+
+const fyTerminalButton = [];
+
+
+export { terminalButton, fyTerminalButton };
 
 
