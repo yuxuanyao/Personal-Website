@@ -155,21 +155,40 @@ const myFirstLink1 = ``;
 const myFirstLink2 = ``;
 
 
-const
+const roboPair = [
+    [roboBtn1, roboLink1],
+    // [roboBtn2, roboLink2]
+];
+
+const sponPair = [
+    [sponBtn1, sponLink1],
+    [sponBtn2, sponLink2]
+];
+
+const ileadPair = [
+    [ileadBtn1, ileadLink1],
+    [ileadBtn2, ileadLink2]
+];
+
+const sumoPair = [
+    [sumoBtn1, sumoLink1],
+    [sumoBtn2, sumoLink2]
+];
+
+const bmecPair = [
+    [bmecBtn1, bmecLink1],
+    [bmecBtn2, bmecLink2]
+];
+
+
+const myFirstPair = [
+    [myFirstBtn1, myFirstLink1],
+    [myFirstBtn2, myFirstLink2]
+]
 
 
 
-
-
-
-
-
-
-
-
-
-
-const fyTerminalButton = [];
+const fyTerminalButton = [roboPair, sponPair, ileadPair, sumoPair, bmecPair, myFirstPair];
 
 
 export { terminalButton, fyTerminalButton };

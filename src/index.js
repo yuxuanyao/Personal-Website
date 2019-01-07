@@ -14,8 +14,8 @@ import 'aos/dist/aos.css';
 
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
-import { contentDescription, titles } from './content/contentDescription';
-import { terminalButton } from './content/terminalBtns';
+import { contentDescription, titles, fyContent, fyTitles } from './content/contentDescription';
+import { terminalButton, fyTerminalButton } from './content/terminalBtns';
 
 // timeline box component
 import Box from './parallaxTimeline';
@@ -48,6 +48,7 @@ class Timeline extends React.Component {
         // array of Box components
         var contents = [];
 
+
         for (var i = 0; i < titles.length; ++i) {
             contents.push(<Box cName={'box box' + i}
                 // imported from content
@@ -58,6 +59,21 @@ class Timeline extends React.Component {
                 tBtn={terminalButton[i]}
             />);
         }
+
+        // array of Box components for first year 
+        var fyContentArr = [];
+        for (var i = 0; i < fyTitles.length; ++i) {
+            fyContentArr.push(<Box cName={'box box' + (i + titles.length)}
+                // imported from content
+                title={fyTitles[i]}
+                // imported from text.js
+                description={fyContent[i]}
+                // imported from terminalBtns.js
+                tBtn={fyTerminalButton[i]}
+            />);
+        }
+
+
         return (
             <div timeLinePageContainer>
                 <div className={'TLNavContainer' + (this.state.tlNav === " tlNavOpen" ? "Open" : "Closed")}>
@@ -80,6 +96,7 @@ class Timeline extends React.Component {
                         dividerContent={firstYear}
                         dividerCname={"firstYear"}
                         dividerBgName={"firstYearbg"} />
+                    {fyContentArr}
                 </div>
             </div>
         );

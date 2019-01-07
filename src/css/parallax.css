@@ -86,6 +86,25 @@ a {
 .box7{
     background-image: url("../images/timeline/frosh.jpg");
 }
+.box8{
+    background-image: url('../images/timeline/robokids.jpg');
+}
+.box9 { 
+    background-image: url('../images/timeline/utra.jpg');
+}
+.box10{
+    background-image: url('../images/timeline/ilead.jpg ');
+}
+.box11{
+    background-image: url('../images/timeline/sumoBot.jpg');
+}
+.box12{
+    background-image: url('../images/timeline/BMEC.jpg');
+}
+.box13{
+    background-image: url("../images/timeline/webdesign.jpg");
+}
+
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
