@@ -1,5 +1,5 @@
 const tlIntroContent1 = `Technology has been my path ever since the beginning university. 
-As my passion for it increases rapidly, I've been eager to learn more about the impact of technology. As I explored, 
+My passion for technology increased rapidly, I've been eager to learn more. As I explored, 
 I discovered that the most efficient way for me to learn is to actually do stuff! `;
 
 const tlIntroContent2 = `This is a list of achievements (big and small) and activities that I'm honored to be a part of, some highlights include:`
