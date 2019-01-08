@@ -107,12 +107,17 @@ const firstWeb2 = `Created a static page using HTML/CSS/Javascript that displaye
 const firstWeb3 = `First time making/finishing something by myself (hooked on coding projects ever since)`;
 const firstWeb4 = `Utilized Bootstrap to divide contents and embedded youtube videos on the page`
 
+
+const bc1 = 'July, 2017';
+const bc2 = 'BC Achievement Scholarships recognize the top 8000 graduates in the province of British Columbia';
+
 const robo = [robo1, robo2, robo3, robo4];
 const spon = [spon1, spon2, spon3, spon4];
 const ilead = [ilead1, ilead2, ilead3];
 const sumo = [sumo1, sumo2, sumo3, sumo4, sumo5];
 const bmec = [bmec1, bmec2, bmec3];
 const firstWeb = [firstWeb1, firstWeb2, firstWeb3];
+const bc = [bc1, bc2];
 
 const fyContent = [
     robo,
@@ -120,7 +125,8 @@ const fyContent = [
     ilead,
     sumo,
     // bmec,
-    firstWeb
+    firstWeb,
+    bc,
 ];
 
 const fyTitles = [
@@ -129,7 +135,8 @@ const fyTitles = [
     `Troost Institute of Leadership in Engineering Education`,
     `Sumo Competition (UTRA)`,
     // `Biomedical Engineering Competition`,
-    'My First Website / Side Project '
+    'My First Website',
+    'BC Achievement Scholarship'
 ];
 
 

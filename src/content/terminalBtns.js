@@ -155,11 +155,18 @@ const sumoLink3 = ``; // need to upload to github
 
 const myFirstBtn1 = `View Project`;
 const myFirstBtn2 = `Image`;
-const myFirstBtn3 = `https://github.com/yuxuanyao/Top-TV-Shows`;
+const myFirstBtn3 = `Website`;
 
 const myFirstLink1 = `https://github.com/yuxuanyao/Top-TV-Shows`;
 const myFirstLink2 = `#`;
-const myFirstLink3 = `https://github.com/yuxuanyao/Top-TV-Shows`;
+const myFirstLink3 = `https://yuxuanyao.github.io/Top-TV-Shows/`;
+
+const bcBtn1 = `Image`;
+const bcBtn2 = `Official Website`;
+
+const bcLink1 = `#`;
+const bcLink2 = `https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/provincial-scholarships/bc-achievement-scholarships`;
+
 
 
 const roboPair = [
@@ -192,12 +199,18 @@ const sumoPair = [
 
 const myFirstPair = [
     [myFirstBtn1, myFirstLink1],
-    [myFirstBtn2, myFirstLink2]
-]
+    [myFirstBtn2, myFirstLink2],
+    [myFirstBtn3, myFirstLink3],
+];
+
+const bcPair = [
+    [bcBtn1, bcLink1],
+    [bcBtn2, bcLink2],
+];
 
 
 
-const fyTerminalButton = [roboPair, sponPair, ileadPair, sumoPair, myFirstPair];
+const fyTerminalButton = [roboPair, sponPair, ileadPair, sumoPair, myFirstPair, bcPair];
 
 
 export { terminalButton, fyTerminalButton };

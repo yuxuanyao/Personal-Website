@@ -29,7 +29,7 @@ class Box extends React.Component {
         // loop through all buttons for this section
         for (var i = 0; i < this.props.tBtn.length; ++i) {
             // photos button for special effects
-            if (this.props.tBtn[i][0] === "Photos") {
+            if (this.props.tBtn[i][0] === "Photos" || this.props.tBtn[i][0] === "Image") {
                 // if no link, don't make it clickable
                 if (this.props.tBtn[i][1] === "#") {
                     tBtnArr.push(
