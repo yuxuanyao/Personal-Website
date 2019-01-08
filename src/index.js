@@ -24,7 +24,7 @@ import TlNav from './timelineNav';
 // timeline section divider
 import Divider from './tlDivider';
 
-import { tlIntroContent, secondYear, firstYear } from './content/tlDividerContent';
+import { tlIntroContent, secondYear, firstYear, entered } from './content/tlDividerContent';
 
 
 class Timeline extends React.Component {
@@ -97,6 +97,10 @@ class Timeline extends React.Component {
                         dividerCname={"firstYear"}
                         dividerBgName={"firstYearbg"} />
                     {fyContentArr}
+                    <Divider dividerTitle={`Entered University!`}
+                        dividerContent={entered}
+                        dividerCname={"entered"}
+                        dividerBgName={"enteredBg"} />
                 </div>
             </div>
         );

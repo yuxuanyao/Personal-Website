@@ -30,6 +30,8 @@ const secondYear = [
 const firstYear = [
     // firstYear1,
     // firstYear2
-]
+];
 
-export { tlIntroContent, secondYear, firstYear };
+const entered = [];
+
+export { tlIntroContent, secondYear, firstYear, entered };
