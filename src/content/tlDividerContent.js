@@ -1,4 +1,4 @@
-const tlIntroContent1 = `Technology has been my path ever since the beginning university. 
+const tlIntroContent1 = `Technology has been my path ever since the beginning of university. 
 My passion for technology increased rapidly, I've been eager to learn more. As I explored, 
 I discovered that the most efficient way for me to learn is to actually do stuff! `;
 
