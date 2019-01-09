@@ -99,7 +99,7 @@ class Timeline extends React.Component {
                     {fyContentArr}
                     <Divider dividerTitle={`Entered University!`}
                         dividerContent={entered}
-                        dividerCname={"entered"}
+                        dividerCname={"enterUni"}
                         dividerBgName={"enteredBg"} />
                 </div>
             </div>

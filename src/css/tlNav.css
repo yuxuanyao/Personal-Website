@@ -42,6 +42,24 @@
     font-size: 16px;
 }
 
+
+
+.tlNavHeading {
+    text-decoration: underline;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 22px;
+}
+.tlNavHeading:hover{
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
 .tlNavItems:hover{
     color: #aaaaaa;
     cursor: pointer;

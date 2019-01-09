@@ -130,7 +130,7 @@ const fyContent = [
 ];
 
 const fyTitles = [
-    `RoboEdu/RoboStorm (work)`,
+    `RoboEdu/RoboKids (work)`,
     `Sponsorships and Finance Director (UTRA)`,
     `Troost Institute of Leadership in Engineering Education`,
     `Sumo Competition (UTRA)`,

@@ -8,6 +8,12 @@ class TlNav extends React.Component {
     render() {
         var tlNavItems = [];
 
+        tlNavItems.push(
+            <li className={"tlNavHeading "}>
+                <Link activeClass="active" to={'secondYearbg'} spy={true} smooth={true} duration={500} >Second Year</Link>
+            </li>
+        );
+
         for (let i = 0; i < titles.length; ++i) {
             tlNavItems.push(
                 // need to add href
@@ -16,6 +22,12 @@ class TlNav extends React.Component {
                 </li>
             );
         }
+
+        tlNavItems.push(
+            <li className={"tlNavHeading "}>
+                <Link activeClass="active" to={'firstYearbg'} spy={true} smooth={true} duration={500} >First Year</Link>
+            </li>
+        );
 
         for (let i = 0; i < fyTitles.length; ++i) {
             tlNavItems.push(
@@ -26,6 +38,11 @@ class TlNav extends React.Component {
             );
         }
 
+        tlNavItems.push(
+            <li className={"tlNavHeading "}>
+                <Link activeClass="active" to={'enterUni'} spy={true} smooth={true} duration={500} >Entered University</Link>
+            </li>
+        );
 
 
         return (
