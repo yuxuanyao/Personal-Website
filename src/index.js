@@ -18,11 +18,11 @@ import { contentDescription, titles, fyContent, fyTitles } from './content/conte
 import { terminalButton, fyTerminalButton } from './content/terminalBtns';
 
 // timeline box component
-import Box from './parallaxTimeline';
+import Box from './TimelineJS/parallaxTimeline';
 // timeline nav bar
-import TlNav from './timelineNav';
+import TlNav from './TimelineJS/timelineNav';
 // timeline section divider
-import Divider from './tlDivider';
+import Divider from './TimelineJS/tlDivider';
 
 import { tlIntroContent, secondYear, firstYear, entered } from './content/tlDividerContent';
 

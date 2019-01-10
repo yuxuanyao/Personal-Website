@@ -1,5 +1,5 @@
 import React from 'react';
-import { titles, fyTitles } from './content/contentDescription';
+import { titles, fyTitles } from '../content/contentDescription';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 class TlNav extends React.Component {
