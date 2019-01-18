@@ -27,6 +27,7 @@ import Divider from './TimelineJS/tlDivider';
 import { tlIntroContent, secondYear, firstYear, entered } from './content/tlDividerContent';
 
 
+
 class Timeline extends React.Component {
     constructor(props) {
         super(props);
