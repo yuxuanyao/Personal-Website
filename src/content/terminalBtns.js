@@ -111,7 +111,7 @@ const froshPair = [
     [froshBtn2, froshLink2],
 ];
 
-const terminalButton = [tHPair, croPair, fpgaPair, astPair, hPPair, uHPair, telusPair, froshPair];
+const terminalButton = [tHPair, fpgaPair, astPair, hPPair, uHPair, telusPair, froshPair];
 
 
 // FIRST YEAR   

@@ -65,9 +65,9 @@ const telus = [telus1, telus2, telus3, telus4];
 const frosh = [frosh1, frosh2, frosh3, frosh4, frosh5];
 
 // 2D array of strings
-const contentDescription = [treeHacks, crocker, fpga, ast, hackPrinceton, uH, telus, frosh];
+const contentDescription = [treeHacks, fpga, ast, hackPrinceton, uH, telus, frosh];
 const titles = ["TreeHacks",
-    "Crocker Foundation Bursary",
+    // "Crocker Foundation Bursary",
     "FPGA Trumpet Practice Tool",
     "Asteroid Shooting Game",
     "HackPrinceton",
