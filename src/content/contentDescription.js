@@ -5,6 +5,11 @@ const tH2 = `I'm very honored to have been accepted into TreeHacks at Stanford U
 const tH3 = `I'm looking forward to learn and imbibe lots of tech related knowledge!`;
 const tH4 = `(and visiting Silicon Valley!) `;
 
+// UofT Hacks
+const UofTH1 = `January 18-21, 2019`;
+const UofTH2 = `Award: Best Aragon App by ChainSafe `;
+const UofTH3 = `Allows the user to rent from a list of vehicles that are registered with SmartCar through Smart Contract transactions using the Ethereum blockchain`;
+const UofTH4 = `When the transaction goes through, the Car would be unlocked through a request to SmartCar API to unlock the door.`;
 
 // Crocker Foundation Awards
 const cro1 = `December 14th, 2018`;
@@ -56,6 +61,7 @@ const frosh5 = `(Stepped out of my comfort zone as an introverted person...)`
 
 // arrays of strings
 const treeHacks = [tH1, tH2, tH3, tH4];
+const UofTHacks = [UofTH1, UofTH2, UofTH3, UofTH4];
 const crocker = [cro1, cro2, cro3];
 const fpga = [fpga1, fpga2, fpga3, fpga4];
 const ast = [ast1, ast2, ast3, ast4, ast5];
@@ -65,8 +71,10 @@ const telus = [telus1, telus2, telus3, telus4];
 const frosh = [frosh1, frosh2, frosh3, frosh4, frosh5];
 
 // 2D array of strings
-const contentDescription = [treeHacks, fpga, ast, hackPrinceton, uH, telus, frosh];
-const titles = ["TreeHacks",
+const contentDescription = [treeHacks, UofTHacks, fpga, ast, hackPrinceton, uH, telus, frosh];
+const titles = [
+    "TreeHacks",
+    "UofT Hacks VI",
     // "Crocker Foundation Bursary",
     "FPGA Trumpet Practice Tool",
     "Asteroid Shooting Game",

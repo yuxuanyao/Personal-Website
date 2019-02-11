@@ -1,4 +1,8 @@
 
+
+
+
+
 // Tree Hacks 
 const tHBtn1 = `Official Website`;
 const tHBtn2 = `Image`;
@@ -8,6 +12,14 @@ const tHLink1 = `https://www.treehacks.com/`;
 const tHLink2 = `#`;
 const tHLink3 = `https://github.com/yuxuanyao`;
 
+// UoftHacks
+const UofTHBtn1 = `Official Website`;
+const UofTHBtn2 = `Image`;
+const UofTHBtn3 = `View Project`;
+
+const UofTHLink1 = `https://uofthacks.com/`;
+const UofTHLink2 = `https://mobile.twitter.com/pri0m/status/1087090366463959040`;
+const UofTHLink3 = `https://github.com/yuxuanyao/EtherRide`;
 
 // Crocker Foundation Bursary
 const croBtn1 = `Image`;
@@ -65,11 +77,19 @@ const froshBtn2 = `Photos`;
 const froshLink1 = `http://blog.orientation.skule.ca/`;
 const froshLink2 = `https://www.photos.skule.ca/1T8-1T9/Frosh-Week-1T8/Frosh-Groups/Ni/i-H8Gt2d2?fbclid=IwAR2k0WQjMGOxZLteIAG3zpfqbEuZobIdaHEC73dl3RKsW1M0JJckFJhf0AI`;
 
+
+
 const tHPair = [
     [tHBtn1, tHLink1],
     [tHBtn2, tHLink2],
     [tHBtn3, tHLink3]
 ];
+
+const UofTHPair = [
+    [UofTHBtn1, UofTHLink1],
+    [UofTHBtn2, UofTHLink2],
+    [UofTHBtn3, UofTHLink3]
+]
 
 const croPair = [
     [croBtn1, croLink1],
@@ -111,7 +131,7 @@ const froshPair = [
     [froshBtn2, froshLink2],
 ];
 
-const terminalButton = [tHPair, fpgaPair, astPair, hPPair, uHPair, telusPair, froshPair];
+const terminalButton = [tHPair, UofTHPair, fpgaPair, astPair, hPPair, uHPair, telusPair, froshPair];
 
 
 // FIRST YEAR   

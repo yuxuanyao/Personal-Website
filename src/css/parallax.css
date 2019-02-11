@@ -65,43 +65,43 @@ a {
 .box0{
     background-image: url('../images/timeline/TreeHacks.png');
 }
-/* .box1{
-    background-image: url('../images/timeline/UofT.jpg');
-} */
 .box1{
+    background-image: url('../images/timeline/UofTHacks.png');
+}
+.box2{
     background-image: url('../images/timeline/fpgaTrumpet.jpg');
 }
-.box2 { 
+.box3 { 
     background-image: url('../images/timeline/asteroids.jpg');
 }
-.box3{
+.box4{
     background-image: url('../images/timeline/hackPrinceton.jpg');
 }
-.box4{
+.box5{
     background-image: url('../images/timeline/utraHacks.png');
 }
-.box5{
+.box6{
     background-image: url('../images/timeline/telusIoT.png');
 }
-.box6{
+.box7{
     background-image: url("../images/timeline/frosh.jpg");
 }
-.box7{
+.box8{
     background-image: url('../images/timeline/robokids.jpg');
 }
-.box8 { 
+.box9 { 
     background-image: url('../images/timeline/utra.jpg');
 }
-.box9{
+.box10{
     background-image: url('../images/timeline/ilead.jpg ');
 }
-.box10{
+.box11{
     background-image: url('../images/timeline/sumoBot.jpg');
 }
-.box11{
+.box12{
     background-image: url("../images/timeline/webdesign.jpg");
 }
-.box12{
+.box13{
     background-image: url("../images/timeline/bc.jpg");
 }
 
