@@ -15,7 +15,7 @@ a {
     background-size: cover;
     display: table;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center; 
     filter: blur(0px);
     -webkit-filter: blur(0px);
