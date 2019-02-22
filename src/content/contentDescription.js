@@ -1,9 +1,9 @@
 
 // Tree Hacks
 const tH1 = `February 15-17, 2019`;
-const tH2 = `I'm very honored to have been accepted into TreeHacks at Stanford University!`;
-const tH3 = `I'm looking forward to learn and imbibe lots of tech related knowledge!`;
-const tH4 = `(and visiting Silicon Valley!) `;
+const tH2 = `Created an React-native mobile app for TreeHacks at Stanford University!`;
+const tH3 = `Integratedthe Houndify API from SoundHound to process voice commands and Expo to deploy the application`;
+const tH4 = `Utilized a custom Node.js server to parse voice commands and covert into format that Houndify requires `;
 
 // UofT Hacks
 const UofTH1 = `January 18-21, 2019`;
