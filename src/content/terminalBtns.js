@@ -10,7 +10,7 @@ const tHBtn3 = `View Project`;
 
 const tHLink1 = `https://www.treehacks.com/`;
 const tHLink2 = `#`;
-const tHLink3 = `https://github.com/yuxuanyao`;
+const tHLink3 = `https://github.com/yuxuanyao/Turn-Down-For-What`;
 
 // UoftHacks
 const UofTHBtn1 = `Official Website`;
